@@ -1,1 +1,1 @@
-# ergonomic_pose_detect
+# ergonomic pose detection
