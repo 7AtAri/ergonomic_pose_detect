@@ -1,1 +1,1 @@
-# ergonomic pose detection
+# ergonomic posture detection
