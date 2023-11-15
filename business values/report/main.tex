@@ -1,0 +1,91 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=3cm]{geometry}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage[export]{adjustbox} %bilder positionieren
+% |-- mathematische Formeln
+% |
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+%Mit Deckblattbild
+\title{Ergonomic Posture Detection}
+\author{Nourhan Omar, Vipin Singh, Polina Trump, Pavlo Kravets, Ari (Sara) Wahl }
+\date{January 30th 2024
+\begin{figure}[h]
+    %\centering
+    \includegraphics[width=17.5cm,height=17.5cm]{test.png}
+\end{figure}
+}
+
+% |
+% |-- Deutsche Buchstaben
+% |
+% +---- Kodierung
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% |
+% +---- Sprache (neue deutsche Rechtschreibung)
+% |
+\usepackage[ngerman]{babel}
+
+% |
+% +---- Bilder in Grids
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{{Images_LaTex_Report/}}
+
+% +---- \usepackage{hyperref} -> be careful, usually, it has to be the last package to be imported, but there might be some exceptions to this rule
+% |
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+\setlength\parindent{0pt} % Einrückung beim "paragraph" wegmachen am Anfang
+
+%Source management with Biblatex
+
+\usepackage[backend = biber, sorting=none]{biblatex}
+\addbibresource{references.bib}
+%\bibliographystyle{unsrt}  % Zitation in aufsteigender Reihenfolge 
+
+\begin{document}
+\maketitle
+
+\input{inhaltsv}
+\input{Introduction}
+\newpage
+\input{Problem}
+\newpage
+\input{Solution: how to address this need}
+\newpage
+\input{Business Model: how to capture value}
+\newpage
+\input{Technology: why is it unique}
+\newpage
+\input{Marketing and sales: how will you sell it}
+\newpage
+\input{Competition: who else is in the game}
+\newpage
+\input{Status or timeline: where are you now, what next}
+\newpage
+\input{Team: who will implement the plan}
+\newpage
+\input{business model canvas}
+\newpage
+\input{planned figures}
+\newpage
+\input{Executive summary: Concise overview of the opportunity}
+\newpage
+\addcontentsline{toc}{section}{Literatur}
+\printbibliography
+
+\end{document}
