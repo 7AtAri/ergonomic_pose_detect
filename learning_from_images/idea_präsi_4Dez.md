@@ -16,7 +16,3 @@ sources:
 - repo for [uniPose](https://github.com/bmartacho/UniPose)
 - repo for [Learning Delicate Local Representations for Multi-Person Pose Estimation](https://github.com/caiyuanhao1998/RSN/)
 - [getting joint angles from the model output](https://temugeb.github.io/python/motion_capture/2021/09/16/joint_rotations.html)
-
-# yolo pose vs. media pipe by google:
-- https://learnopencv.com/yolov7-pose-vs-mediapipe-in-human-pose-estimation/
-- https://learnopencv.com/introduction-to-mediapipe/
