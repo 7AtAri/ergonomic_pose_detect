@@ -20,3 +20,23 @@ couple of slides:
 # yolo pose vs google media pipe
 https://learnopencv.com/yolov7-pose-vs-mediapipe-in-human-pose-estimation/
 https://learnopencv.com/introduction-to-mediapipe/
+
+
+- ergonomic angles etc:
+
+https://towardsai.net/p/machine-learning/detecting-bad-posture-with-machine-learning
+
+https://ergo-plus.com/rula-assessment-tool-guide/
+
+https://ergo-plus.com/wp-content/uploads/RULA.pdf
+
+https://developers.google.com/mediapipe/solutions/vision/pose_landmarker/
+
+https://developers.google.com/mediapipe/solutions/vision/pose_landmarker/python
+
+
+https://www.mdpi.com/1660-4601/19/1/595
+
+https://www.researchgate.net/profile/Gabriele-Caragnano/publication/254321880_The_European_Assembly_Worksheet/links/55d1968c08aee19936fdad26/The-European-Assembly-Worksheet.pdf
+
+https://arxiv.org/abs/2209.05252
