@@ -43,3 +43,6 @@ https://www.mdpi.com/1660-4601/19/1/595
 https://www.researchgate.net/profile/Gabriele-Caragnano/publication/254321880_The_European_Assembly_Worksheet/links/55d1968c08aee19936fdad26/The-European-Assembly-Worksheet.pdf
 
 https://arxiv.org/abs/2209.05252
+
+- Implementation of REBA score calculation from angle between joints:
+  https://github.com/Atiehmerikh/REBA_calculator/tree/master/body_part_reba_calculator/Degree_to_REBA
