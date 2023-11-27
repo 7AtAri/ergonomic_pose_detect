@@ -21,6 +21,9 @@ couple of slides:
 https://learnopencv.com/yolov7-pose-vs-mediapipe-in-human-pose-estimation/
 https://learnopencv.com/introduction-to-mediapipe/
 
+# example implementations:
+- https://www.linkedin.com/pulse/daily-life-example-human-pose-estimation-serkan-erdonmez
+- 
 
 - ergonomic angles etc:
 
