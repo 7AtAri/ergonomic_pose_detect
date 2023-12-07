@@ -19,13 +19,15 @@ workload distribution:
 5. Marketing and sales: how will you sell it [Ari,**NAMEs]
 
 6. Competition: who else is in the game (expect numerous, if it is something intersting) [Ari, **NAMEs]
+   -> market analysis
+   -> swot analysis?
 
-7. Team: who will implement the plan  [Ari, **NAMEs]
---> vipin and ari (but maybe we have to get additional hypothetical resources)
+8. Team: who will implement the plan  [Ari, **NAMEs]
+--> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-8. Status/timeline: where are you now, what next [**NAMEs]
+9. Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis
 
-9. Executive summary: Concise overview of the opportunity  [**NAMEs]
+10. Executive summary: Concise overview of the opportunity  [**NAMEs]
 
 _______________________________________________________________________________________________________
 1. Present initial business idea [**everyone?]
