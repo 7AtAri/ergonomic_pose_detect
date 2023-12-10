@@ -14,7 +14,7 @@ workload distribution:
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
 
-4. Technology: why is it unique [**NAMEs]
+4. Technology: why is it unique [Polina,**NAMEs]
 
 5. Marketing and sales: how will you sell it [Ari,**NAMEs]
 
@@ -25,9 +25,9 @@ workload distribution:
 8. Team: who will implement the plan  [Ari, **NAMEs]
 --> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-9. [-> after 1-8] Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis, milestones etc.
+9. [-> after 1-8] Status/timeline: where are you now, what next [Polina,**NAMEs]  -> break-even analysis, milestones etc.
 
-10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [**NAMEs]
+10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [Polina,**NAMEs]
 
 _______________________________________________________________________________________________________
 1. Present initial business idea [**everyone?]
