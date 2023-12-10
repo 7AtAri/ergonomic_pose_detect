@@ -25,7 +25,7 @@ workload distribution:
 8. Team: who will implement the plan  [Ari, **NAMEs]
 --> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-9. Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis
+9. Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis, milestones etc.
 
 10. Executive summary: Concise overview of the opportunity  [**NAMEs]
 
