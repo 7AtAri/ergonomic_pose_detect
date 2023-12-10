@@ -25,9 +25,9 @@ workload distribution:
 8. Team: who will implement the plan  [Ari, **NAMEs]
 --> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-9. Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis, milestones etc.
+9. [-> after 1-8] Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis, milestones etc.
 
-10. Executive summary: Concise overview of the opportunity  [**NAMEs]
+10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [**NAMEs]
 
 _______________________________________________________________________________________________________
 1. Present initial business idea [**everyone?]
@@ -37,7 +37,7 @@ as guiding tool to develop your business
 plan in each of the 9 (nine) areas: [Ari, **Names]
 value proposition, key activities, key partners etc.
 
-3. Complete the file: [**Names]
+3. [-> after 2.] Complete the file: [**Names]
 Business model_planned figures.xls for your business
 
 4. Create a mock-up of your product/service [Ari, **Names]
