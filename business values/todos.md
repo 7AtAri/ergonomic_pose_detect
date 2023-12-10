@@ -8,7 +8,7 @@ workload distribution:
 2. Solution: how to address this need  
  ---> already presented (could be extended)
 
-3. Business Model: how to capture value [Ari, **NAMEs]
+3. Business Model: how to capture value [Ari, Nour, **NAMEs]
 ---> B2C app: freemium model ? (single-pose) For home-office workers
 ---> B2B business office package: For offices (multi-pose estimation) - check if sytemic problem or if specific persons often have bad posture 
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
@@ -16,9 +16,9 @@ workload distribution:
 
 4. [-> after 6?] Technology: why is it unique [Polina,**NAMEs]
 
-5. [-> after 6?] Marketing and sales: how will you sell it [Ari,**NAMEs] (+ MockUP)
+5. [-> after 6?] Marketing and sales: how will you sell it [Ari,Nour,**NAMEs] (+ MockUP)
 
-6. Competition: who else is in the game (expect numerous, if it is something intersting) [**NAMEs]
+6. Competition: who else is in the game (expect numerous, if it is something intersting) [Nour,**NAMEs]
    -> market analysis
    -> swot analysis?
 
