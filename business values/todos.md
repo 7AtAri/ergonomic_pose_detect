@@ -14,35 +14,37 @@ workload distribution:
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
 
-4. Technology: why is it unique [**NAMEs]
+4. [-> after 6?] Technology: why is it unique [Polina,**NAMEs]
 
-5. Marketing and sales: how will you sell it [Ari,**NAMEs]
+5. [-> after 6?] Marketing and sales: how will you sell it [Ari,**NAMEs] (+ MockUP)
 
-6. Competition: who else is in the game (expect numerous, if it is something intersting) [Ari, **NAMEs]
+6. Competition: who else is in the game (expect numerous, if it is something intersting) [**NAMEs]
    -> market analysis
    -> swot analysis?
 
-8. Team: who will implement the plan  [Ari, **NAMEs]
+8. Team: who will implement the plan  [Ari, **NAMEs] (+ MockUP)
 --> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-9. Status/timeline: where are you now, what next [**NAMEs]  -> break-even analysis
+9. [-> after 1-8] Status/timeline: where are you now, what next [Polina,**NAMEs]  -> break-even analysis, milestones etc.
 
-10. Executive summary: Concise overview of the opportunity  [**NAMEs]
+10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [Polina,**NAMEs]
 
 _______________________________________________________________________________________________________
-1. Present initial business idea [**everyone?]
+A. Present initial business idea [**already DONE]
 
-2. Take the business model canvas 
+B. Take the business model canvas 
 as guiding tool to develop your business
 plan in each of the 9 (nine) areas: [Ari, **Names]
 value proposition, key activities, key partners etc.
+(connected to 4)
 
-3. Complete the file: [**Names]
+C. [-> after B.] Complete the file: [**Names]
 Business model_planned figures.xls for your business
+(This maybe connected to point 4 & 9)
 
-4. Create a mock-up of your product/service [Ari, **Names]
+D. Create a mock-up of your product/service [Ari, **Names] (connected to 5. & 8.)
 to be demonstrated in the final presentation (example in moodle)
 
-5. Final presentation ppt including presentation of product and figure (example in moodle) [**everyone]
+E. Final presentation ppt including presentation of product and figure (example in moodle) [**everyone]
 
-6. Final report complementing the final presentation. Identify which group member has contributed which sub-chapter. [**everyone]
+F. Final report complementing the final presentation. Identify which group member has contributed which sub-chapter. [**everyone]
