@@ -1,6 +1,6 @@
 workload distribution: 
 
-**add your name in the brackets if you are interested in the topic
+** we will decide after the business model canvas and quick competition check ** 
 
 1. Problem: what is the problem   
 ---> already presented (could be extended)
