@@ -27,7 +27,7 @@ workload distribution:
 
 8. [-> after 1-8] Status/timeline: where are you now, what next [Polina, Pavlo]  -> break-even analysis, milestones etc.
 
-9. [-> after 1-9] Executive summary: Concise overview of the opportunity  [Polina,**NAMEs]
+9. [-> after 1-9] Executive summary: Concise overview of the opportunity  [everybody]
 
 _______________________________________________________________________________________________________
 A. Present initial business idea [**already DONE]
