@@ -1,0 +1,40 @@
+\usepackage[top=2.5cm, bottom=2.5cm, left = 2cm, right = 2cm]{geometry} 
+\geometry{a4paper} 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{graphicx} 
+\usepackage{amsmath,amssymb, amsfonts, amsthm}  
+\usepackage{bm}  
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref}  
+\usepackage{memhfixc} 
+\usepackage{pdfsync} 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[backend=biber,style=numeric,sorting=none,minbibnames=1]{biblatex}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{xurl}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\addbibresource{references.bib}
+\graphicspath{{figures/}}
+
+% Command for new paragraph
+\newcommand{\p}{\par\bigskip\noindent}
+
+% No indent at start of paragraph
+\setlength\parindent{0pt}
+
+% URL style
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+\urlstyle{same}

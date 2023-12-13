@@ -1,91 +1,124 @@
-\documentclass{scrartcl}
-\usepackage[utf8]{inputenc}
-\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=3cm]{geometry}
-\usepackage{xcolor}
-\usepackage{colortbl}
-\usepackage{float}
-\usepackage[export]{adjustbox} %bilder positionieren
-% |-- mathematische Formeln
-% |
-\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\documentclass[a4paper, 11pt]{report}
+\input{config}
 
-%Mit Deckblattbild
-\title{Ergonomic Posture Detection}
-\author{Nourhan Omar, Vipin Singh, Polina Kozyr, Pavlo Kravets, Ari (Sara) Wahl }
-\date{January 30th 2024
-\begin{figure}[h]
-    %\centering
-    \includegraphics[width=17.5cm,height=17.5cm]{test.png}
-\end{figure}
+% Title page with image
+\title{
+    {\Huge Ergonomic Posture Detection}\\
+    {\large Business Values - Prof. Dr. Sandra Dressler}
 }
-
-% |
-% |-- Deutsche Buchstaben
-% |
-% +---- Kodierung
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-% |
-% +---- Sprache (neue deutsche Rechtschreibung)
-% |
-\usepackage[ngerman]{babel}
-
-% |
-% +---- Bilder in Grids
-
-\usepackage{graphicx}
-\usepackage{subcaption}
-\graphicspath{{Images_LaTex_Report/}}
-
-% +---- \usepackage{hyperref} -> be careful, usually, it has to be the last package to be imported, but there might be some exceptions to this rule
-% |
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=cyan,
+\author{Nourhan Omar, Vipin Singh, Polina Kozyr, Pavlo Kravets, Ari (Sara) Wahl}
+\date{
+    \begin{figure}[h]
+        %\centering
+        \includegraphics[width=17.5cm,height=17.5cm]{test}
+    \end{figure}
 }
-\urlstyle{same}
-
-\setlength\parindent{0pt} % Einrückung beim "paragraph" wegmachen am Anfang
-
-%Source management with Biblatex
-
-\usepackage[backend = biber, sorting=none]{biblatex}
-\addbibresource{references.bib}
-%\bibliographystyle{unsrt}  % Zitation in aufsteigender Reihenfolge 
 
 \begin{document}
-\maketitle
+    \input{titlepage}
 
-\input{inhaltsv}
-\input{Introduction}
-\newpage
-\input{Problem}
-\newpage
-\input{Solution: how to address this need}
-\newpage
-\input{Business Model: how to capture value}
-\newpage
-\input{Technology: why is it unique}
-\newpage
-\input{Marketing and sales: how will you sell it}
-\newpage
-\input{Competition: who else is in the game}
-\newpage
-\input{Status or timeline: where are you now, what next}
-\newpage
-\input{Team: who will implement the plan}
-\newpage
-\input{business model canvas}
-\newpage
-\input{planned figures}
-\newpage
-\input{Executive summary: Concise overview of the opportunity}
-\newpage
-\addcontentsline{toc}{section}{Literatur}
-\printbibliography
+    % Abstract
+	{
+		\FloatBarrier
+		\newpage
+        \setcounter{page}{2}
+		\phantomsection
+		\addcontentsline{toc}{chapter}{Abstract}
+		\thispagestyle{plain}
+		\vspace*{\fill}
+			\section*{{\Large Abstract}}
+			\input{chapters/abstract}
+		\vspace*{\fill}
+	}
+
+    % Table of contents
+    {
+        \FloatBarrier
+        \newpage
+        \phantomsection
+        \addcontentsline{toc}{chapter}{Contents}
+        \tableofcontents
+    }
+
+    % Introduction: What is the problem?
+	{
+		\FloatBarrier
+		\chapter{Introduction}
+		\label{chp:introduction}
+		\input{chapters/introduction}
+	}
+
+    % Solution: How to address this need?
+	{
+		\FloatBarrier
+		\chapter{Solution: How to adress this need?}
+		\label{chp:solution}
+		\input{chapters/solution}
+	}
+
+    % Technology: Why is it unique?
+	{
+		\FloatBarrier
+		\chapter{Technology: Why is it unique?}
+		\label{chp:technology}
+		\input{chapters/technology}
+	}
+
+    % Business Model: How to capture value?
+	{
+		\FloatBarrier
+		\chapter{Business Model: How to capture value?}
+		\label{chp:business_model}
+		\input{chapters/business_model}
+	}
+
+    % Marketing and sales: how will you sell it
+	{
+		\FloatBarrier
+		\chapter{Marketing and sales: How to sell it?}
+		\label{chp:marketing}
+		\input{chapters/marketing}
+	}
+
+    % Competition: who else is in the game
+	{
+		\FloatBarrier
+		\chapter{Competition: Who else is in the game?}
+		\label{chp:competition}
+		\input{chapters/competition}
+	}
+
+    % Implementation team: Who will implement the plan?
+	{
+		\FloatBarrier
+		\chapter{Implementation team: Who will implement the plan?}
+		\label{chp:implementation}
+		\input{chapters/implementation}
+	}
+
+    % Status or timeline: Where are we now, what next?
+	{
+		\FloatBarrier
+		\chapter{Status or timeline: Where are we now, what next?}
+		\label{chp:timeline}
+		\input{chapters/timeline}
+	}
+
+    % Executive summary: Concise overview of the opportunity
+	{
+		\FloatBarrier
+		\chapter{Executive summary: Concise overview of the opportunity}
+		\label{chp:summary}
+		\input{chapters/summary}
+	}
+
+    % References
+	{
+		\FloatBarrier
+		\newpage
+		\phantomsection
+		\addcontentsline{toc}{chapter}{References}
+		\printbibliography[title = References]
+	}
 
 \end{document}
