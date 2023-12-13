@@ -13,26 +13,27 @@ workload distribution:
 ---> B2B business office package: For offices (multi-pose estimation) - check if sytemic problem or if specific persons often have bad posture 
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
-
+ * market size analysis (slides 13.12.)
 4. [-> after 6?] Technology: why is it unique (+ MockUP)  **group 1**
  * PEST analysis (see slides 13.12.)
  * 5 forces analysis (slides 13.12.)
     
 5. [-> after 4 and 6?] Marketing and sales: how will you sell it   **group 2** 
- * marketing methods
+ * marketing methods (4P Model - slides 13.12.) 
  * project sales numbers
    
 6. Competition: who else is in the game (expect numerous, if it is something intersting) **group 1** 
   * market analysis
   * swot analysis?
 
-8. Team: who will implement the plan **group 2** 
+7. Team: who will implement the plan **group 2** 
  * app + design
  * resources needed
-   
-9. [-> after 1-8] Status/timeline: where are you now, what next [everyone]  -> break-even analysis, milestones etc.
+ * chosing a company structure?
+      
+8. [-> after 1-8] Status/timeline: where are you now, what next [everyone]  -> break-even analysis, milestones etc.
 
-10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [everybody]
+9. [-> after 1-9] Executive summary: Concise overview of the opportunity  [everybody]
 
 _______________________________________________________________________________________________________
 A. Present initial business idea [**already DONE]
