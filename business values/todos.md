@@ -14,18 +14,18 @@ workload distribution:
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
 
-4. [-> after 6?] Technology: why is it unique [Polina,**NAMEs]
+4. [-> after 6?] Technology: why is it unique [Polina,**NAMEs] **group 1**
 
-5. [-> after 6?] Marketing and sales: how will you sell it [Ari,Nour,**NAMEs] (+ MockUP)
+5. [-> after 6?] Marketing and sales: how will you sell it [Ari, Nour,**NAMEs] (+ MockUP) **group 2** -> marketing methods
 
-6. Competition: who else is in the game (expect numerous, if it is something intersting) [Nour,**NAMEs]
+6. Competition: who else is in the game (expect numerous, if it is something intersting) **group1** [Nour,**NAMEs]
    -> market analysis
    -> swot analysis?
 
-7. Team: who will implement the plan  [Ari, **NAMEs] (+ MockUP)
+7. Team: who will implement the plan  [Ari, Vipin] **group2** (+ MockUP) 
 --> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-8. [-> after 1-8] Status/timeline: where are you now, what next [Polina, Pavlo]  -> break-even analysis, milestones etc.
+8. [-> after 1-8] Status/timeline: where are you now, what next [everyone]  -> break-even analysis, milestones etc.
 
 9. [-> after 1-9] Executive summary: Concise overview of the opportunity  [everybody]
 
