@@ -29,7 +29,7 @@ workload distribution:
 7. Team: who will implement the plan **group 2** 
  * app + design
  * resources needed
- * chosing a company structure?
+ * choosing a company structure?
       
 8. [-> after 1-8] Status/timeline: where are you now, what next [everyone]  -> break-even analysis, milestones etc.
 
