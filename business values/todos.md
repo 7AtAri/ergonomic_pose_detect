@@ -36,11 +36,11 @@ B. Take the business model canvas
 as guiding tool to develop your business
 plan in each of the 9 (nine) areas: [Ari, **Names]
 value proposition, key activities, key partners etc.
-(connected to 4)
+(connected to 3)
 
 C. [-> after B.] Complete the file: [**Names]
 Business model_planned figures.xls for your business
-(This maybe connected to point 4 & 9)
+(This maybe connected to point 3 & 9)
 
 D. Create a mock-up of your product/service [Ari, **Names] (connected to 5. & 8.)
 to be demonstrated in the final presentation (example in moodle)
