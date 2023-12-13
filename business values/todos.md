@@ -34,7 +34,7 @@ A. Present initial business idea [**already DONE]
 
 B. Take the business model canvas 
 as guiding tool to develop your business
-plan in each of the 9 (nine) areas: [Ari, **Names]
+plan in each of the 9 (nine) areas: [everyone]
 value proposition, key activities, key partners etc.
 (connected to 3)
 
