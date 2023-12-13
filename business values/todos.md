@@ -14,20 +14,25 @@ workload distribution:
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
 
-4. [-> after 6?] Technology: why is it unique [Polina,**NAMEs] **group 1**
+4. [-> after 6?] Technology: why is it unique (+ MockUP)  **group 1**
+ * PEST analysis (see slides 13.12.)
+ * 5 forces analysis (slides 13.12.)
+    
+5. [-> after 4 and 6?] Marketing and sales: how will you sell it   **group 2** 
+ * marketing methods
+ * project sales numbers
+   
+6. Competition: who else is in the game (expect numerous, if it is something intersting) **group 1** 
+  * market analysis
+  * swot analysis?
 
-5. [-> after 6?] Marketing and sales: how will you sell it [Ari, Nour,**NAMEs] (+ MockUP) **group 2** -> marketing methods
+8. Team: who will implement the plan **group 2** 
+ * app + design
+ * resources needed
+   
+9. [-> after 1-8] Status/timeline: where are you now, what next [everyone]  -> break-even analysis, milestones etc.
 
-6. Competition: who else is in the game (expect numerous, if it is something intersting) **group1** [Nour,**NAMEs]
-   -> market analysis
-   -> swot analysis?
-
-7. Team: who will implement the plan  [Ari, Vipin] **group2** (+ MockUP) 
---> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
-
-8. [-> after 1-8] Status/timeline: where are you now, what next [everyone]  -> break-even analysis, milestones etc.
-
-9. [-> after 1-9] Executive summary: Concise overview of the opportunity  [everybody]
+10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [everybody]
 
 _______________________________________________________________________________________________________
 A. Present initial business idea [**already DONE]
@@ -42,7 +47,7 @@ C. [-> after B.] Complete the file: [Pavlo]
 Business model_planned figures.xls for your business
 (This maybe connected to point 3 & 9)
 
-D. Create a mock-up of your product/service [Ari, **Names] (connected to 5. & 8.)
+D. Create a mock-up of your product/service [Ari, **Names] (connected to 4., 5. & 8.)
 to be demonstrated in the final presentation (example in moodle)
 
 E. Final presentation ppt including presentation of product and figure (example in moodle) [**everyone]
