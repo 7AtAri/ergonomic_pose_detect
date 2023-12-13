@@ -22,12 +22,12 @@ workload distribution:
    -> market analysis
    -> swot analysis?
 
-8. Team: who will implement the plan  [Ari, **NAMEs] (+ MockUP)
+7. Team: who will implement the plan  [Ari, **NAMEs] (+ MockUP)
 --> vipin and ari (but maybe we have to get additional hypothetical resources -> app+design)
 
-9. [-> after 1-8] Status/timeline: where are you now, what next [Polina,**NAMEs]  -> break-even analysis, milestones etc.
+8. [-> after 1-8] Status/timeline: where are you now, what next [Polina, Pavlo]  -> break-even analysis, milestones etc.
 
-10. [-> after 1-9] Executive summary: Concise overview of the opportunity  [Polina,**NAMEs]
+9. [-> after 1-9] Executive summary: Concise overview of the opportunity  [Polina,**NAMEs]
 
 _______________________________________________________________________________________________________
 A. Present initial business idea [**already DONE]
@@ -38,7 +38,7 @@ plan in each of the 9 (nine) areas: [everyone]
 value proposition, key activities, key partners etc.
 (connected to 3)
 
-C. [-> after B.] Complete the file: [**Names]
+C. [-> after B.] Complete the file: [Pavlo]
 Business model_planned figures.xls for your business
 (This maybe connected to point 3 & 9)
 
