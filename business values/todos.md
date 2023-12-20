@@ -76,10 +76,10 @@ pick Chapters for report: one of each category per person
 - technology
   
 (smaller chapters)
-- problem
+- abstract
+- introduction / problem
 - solution
-- introduction
+- timeline
 - summary
-- timeline 
 
 
