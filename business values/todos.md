@@ -18,6 +18,8 @@ workload distribution:
  * PEST analysis (see slides 13.12.)
  * 5 forces analysis (slides 13.12.)
  * eventually swot analysis (slides chapter 9 - part II)
+ * R&D (research results for technologies)
+ * check if licences needed for involved packages etc.?
     
 5. [-> after 4 and 6?] Marketing and sales: how will you sell it **[Nour, Polina, Pavlo]**
  * marketing methods (4P Model - slides 13.12.) 
