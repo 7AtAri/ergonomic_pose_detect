@@ -22,27 +22,28 @@ workload distribution:
  * marketing methods (4P Model - slides 13.12.) 
  * project sales numbers
  * market size analysis (slides 13.12.)
- * value chain (Porter 1985)
+ * customer segmentation (slides chapter 9 - part II)
+ * (eventually value chain (Porter 1985))
+ * ABC-Analysis to identify customer groups (slides chapter 9 - part II) -> develop target products /services
    
 6. Competition: who else is in the game (expect numerous, if it is something intersting) **[Nour, Polina]**
   * market analysis
-  * swot analysis (slides 20.12.)
-  * competitor analysis (slides 20.12.) -> add up revenues of main competitors to estimate growth etc
+  * swot analysis (slides chapter 9 - part II)
+  * competitor analysis (slides chapter 9 - part II) -> add up revenues of main competitors to estimate growth etc
                                         -> statista might not be enough, try to get overview/statisics
   * important: choice of competitive strategy (slides 20.12.)
-  * if there are competitors -> cluster them ("strategic groups" slides 20.12.)
-  * eventually market growth / market share matrix (slides 20.12.)
-    
+  * if there are competitors -> cluster them ("strategic groups" slides chapter 9 - part II)
 
 7. Team: who will implement the plan **[Ari, Vipin, Pavlo]**
  * app + design (+ MockUP)
  * resources needed
- * choosing a company structure (lecture 2)
+ * choosing a company legal structure (lecture 2)
+ * choosing company organization structure (lecture 2)
       
 8. [-> after 1-8] Status/timeline: where are you now, what next **[everyone]**  -> break-even analysis, milestones etc.
 
 9. [-> after 1-9] Executive summary: Concise overview of the opportunity  **[everybody]**
-* market growth / market share matrix (slides 20.12.)
+* market growth / market share matrix (slides chapter 9 - part II)
 _______________________________________________________________________________________________________
 A. Present initial business idea [**already DONE]
 
