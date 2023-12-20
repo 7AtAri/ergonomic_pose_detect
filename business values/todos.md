@@ -53,4 +53,25 @@ to be demonstrated in the final presentation (example in moodle)
 
 E. Final presentation ppt including presentation of product and figure (example in moodle) [**everyone]
 
-F. Final report complementing the final presentation. Identify which group member has contributed which sub-chapter. [**everyone]
+F. Final report complementing the final presentation. Identify which group member has contributed 
+which sub-chapter. [**everyone]
+
+------------------------------------------------------------------------------------------------------
+-------------------------------
+pick Chapters for report: one of each category per person
+
+(bigger chapters)
+- business model
+- marketing
+- competition
+- implementation
+- technology
+  
+(smaller chapters)
+- problem
+- solution
+- introduction
+- summary
+- timeline 
+
+
