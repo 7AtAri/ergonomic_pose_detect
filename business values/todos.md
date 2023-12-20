@@ -22,8 +22,9 @@ workload distribution:
  * check if licences needed for involved packages etc.?
     
 5. [-> after 4 and 6?] Marketing and sales: how will you sell it **[Nour, Polina, Pavlo]**
- * marketing methods (4P Model - slides 13.12.) 
- * project sales numbers! 
+ * marketing methods (slides 13.12.)
+ * 4P Model (slides 13.12.) 
+ * project sales numbers!! 
  * market size analysis (slides 13.12.)
  * customer segmentation (slides chapter 9 - part II)
  * (eventually value chain (Porter 1985))
@@ -39,7 +40,7 @@ workload distribution:
 
 7. Team: who will implement the plan **[Ari, Vipin, Pavlo]**
  * app + design (+ MockUP)
- * resources needed
+ * resources needed (numbers!)
  * choosing a company legal structure (lecture 2)
  * choosing company organization structure (lecture 2)
       
