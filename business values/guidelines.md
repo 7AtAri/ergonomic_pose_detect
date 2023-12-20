@@ -31,3 +31,21 @@ and set out all team members to the project.
 Indicate the author of each section.
 Each section needs to be written by ONE author 
 only to assure individual contributions to the project.
+
+-------------------------------
+pick Chapters for report: one of each category
+
+(bigger chapters)
+- business model
+- marketing
+- competition
+- implementation
+- technology
+  
+(smaller chapters)
+- problem
+- solution
+- introduction
+- summary
+- timeline
+
