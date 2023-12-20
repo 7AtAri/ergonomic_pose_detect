@@ -23,7 +23,7 @@ workload distribution:
     
 5. [-> after 4 and 6?] Marketing and sales: how will you sell it **[Nour, Polina, Pavlo]**
  * marketing methods (4P Model - slides 13.12.) 
- * project sales numbers
+ * project sales numbers! 
  * market size analysis (slides 13.12.)
  * customer segmentation (slides chapter 9 - part II)
  * (eventually value chain (Porter 1985))
@@ -48,29 +48,29 @@ workload distribution:
 9. [-> after 1-9] Executive summary: Concise overview of the opportunity  **[everybody]**
 * market growth / market share matrix (slides chapter 9 - part II)
 _______________________________________________________________________________________________________
-A. Present initial business idea [**already DONE]
+A. Present initial business idea [**already DONE**]
 
 B. Take the business model canvas 
 as guiding tool to develop your business
-plan in each of the 9 (nine) areas: [everyone]
+plan in each of the 9 (nine) areas: [**DONE**]
 value proposition, key activities, key partners etc.
 (connected to 3)
 
-C. [-> after B.] Complete the file: [Pavlo]
+C. [-> after B.] Complete the file: [**Pavlo**]
 Business model_planned figures.xls for your business
-(This maybe connected to point 3 & 9)
+(This is connected to point 3, 5, 7)
 
-D. Create a mock-up of your product/service [Ari, **Names] (connected to 4., 5. & 8.)
+D. Create a mock-up of your product/service [**Ari**] (connected to 4., 5. & 8.)
 to be demonstrated in the final presentation (example in moodle)
 
-E. Final presentation ppt including presentation of product and figure (example in moodle) [**everyone]
+E. Final presentation ppt including presentation of product and figure (example in moodle) [**everyone**]
 
 F. Final report complementing the final presentation. Identify which group member has contributed 
-which sub-chapter. [**everyone]
+which sub-chapter. [**everyone**]
 
 ------------------------------------------------------------------------------------------------------
 -------------------------------
-pick Chapters for report: one of each category per person
+pick Chapters for report: one of each category per person 
 
 (bigger chapters)
 - business model
