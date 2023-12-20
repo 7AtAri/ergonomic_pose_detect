@@ -14,7 +14,7 @@ workload distribution:
 ---> B2B Fitness studio package: (muli-pose) Trainers can see who is doing it wrong and go to that person 
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
  * market size analysis (slides 13.12.)
-4. [-> after 6?] Technology: why is it unique (+ MockUP)  **group 1**
+4. [-> after 6?] Technology: why is it unique  **group 1**
  * PEST analysis (see slides 13.12.)
  * 5 forces analysis (slides 13.12.)
     
@@ -27,7 +27,7 @@ workload distribution:
   * swot analysis?
 
 7. Team: who will implement the plan **group 2** 
- * app + design
+ * app + design (+ MockUP)
  * resources needed
  * choosing a company structure?
       
