@@ -10,7 +10,11 @@ and give the feedback in a subtle way. We propose a traffic light colored-scheme
 around the users screen. This means that the frame will be green if the user's posture is correct, yellow if the posture is not optimal 
 and should be changed soon and red if the posture is bad and should be changed immediately. 
 We will also provide an option to display the feedback as sound. There will be no sound if the posture is correct, a
-beep from time to time if the posture is not optimal and a continuous sound if the posture is bad.
+beep from time to time if the posture is not optimal and a continuous sound if the posture is bad. 
+The user can choose if we will also provide a visual feedback in the form of a small window that will be displayed in the corner of the user's screen.
+This window will show the user's posture in real-time and in case of a bad posture highlights the regions that contribute most to the detection of a bad posture.
+So the user can know which parts of their posture they should correct. Eventually we will also display arrows
+in the image on how/which direction to correct the posture next to the highlighted parts.
 
 As data privacy is an important issue with real-time video analysis, we will develop the software in a way that the raw video data
 will not leave the user's device. It will be processed locally in a first step on the user's device and only the processed data will be sent to the server.
