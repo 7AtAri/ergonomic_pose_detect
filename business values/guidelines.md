@@ -43,9 +43,9 @@ pick Chapters for report: one of each category
 - technology
   
 (smaller chapters)
-- problem
+- abstract
 - solution
-- introduction
+- introduction / problem
 - summary
 - timeline
 
