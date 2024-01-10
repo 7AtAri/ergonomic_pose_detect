@@ -74,17 +74,17 @@ which sub-chapter. [**everyone**]
 pick Chapters for report: one of each category per person 
 
 (bigger chapters)
-- business model
-- marketing
-- competition
-- implementation
-- technology
+- business model + Business model_planned figures.xls [Pavlo] 
+- marketing [Polina]
+- competition [Nour]
+- implementation/Team [Vipin]
+- technology [Ari]
   
 (smaller chapters)
-- abstract
-- introduction / problem
-- solution
-- timeline
-- summary
+- abstract [Polina]
+- introduction / problem [Nour]
+- solution [Ari]
+- timeline [Vipin]
+- summary [Pavlo]
 
 
