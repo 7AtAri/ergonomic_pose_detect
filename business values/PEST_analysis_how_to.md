@@ -1,9 +1,11 @@
-Performing a PEST Analysis involves a systematic examination 
-of external factors impacting a business or project.
+Performing a PEST Analysis involves a systematic examination \
+of external factors impacting a business or project. \
 PEST stands for Political, Economic, Social, and Technological factors. 
 
 
-Gather relevant data and information. This may include market research, industry reports, and current news relevant to the business or project.
+Gather relevant data and information. \
+This may include market research, industry reports, \
+and current news relevant to the business or project.
 
 1. **Political Factors**:
    - Analyze how government policies and political stability might impact the business.
