@@ -1,10 +1,29 @@
 
 Notes by Ari
 
+Packages used so far: 
+
+from ultralytics import YOLO
+import cv2
+import numpy as np
+from PIL import Image
+import Cocoa
+import Quartz
+import objc
+from PyObjCTools import AppHelper
+import threading
+
+automated licence checking for package dependencies:
+https://pypi.org/project/pip-licenses/
+https://dev.to/meetkern/how-we-automated-license-checking-for-our-python-js-dependencies-5900
+
+-----------------------------------------------------
 - main model:
 state-of-the-art model for pose estimation from papers with code
 or alternatively:
-YOLO runs live within the app on the device of the user, outputs the keypoints and we only classify on those, meaning only the keypoints are sent to the cloud, which is probably a decent abstraction...
+YOLO runs live within the app on the device of the user, outputs the keypoints 
+and we only classify on those, meaning only the keypoints are sent to the cloud, 
+which is probably a decent abstraction...
 or
 [mobile phone sized model for pose estimation](https://arxiv.org/pdf/2308.09084.pdf)
 
@@ -12,7 +31,10 @@ or
 with own dataset according to RULA
 
 - data privacy:
-We need to ensure that the privacy of our customers is kept safe. Therefore we propose a preprocessing of the videofeed within the app to so that only privacy-preserved data leaves the users device and ends up in the cloud where it is inserted into the machine learning model.
+We need to ensure that the privacy of our customers is kept safe.
+Therefore we propose a preprocessing of the videofeed within the app 
+to so that only privacy-preserved data leaves the users device 
+and ends up in the cloud where it is inserted into the machine learning model.
 
 or federated learning approach:
 run machine learning with data that remains at the source:
@@ -29,10 +51,11 @@ or:
 
 * https://easyeasy.medium.com/protecting-privacy-a-comprehensive-guide-to-video-anonymization-for-ai-training-4b85fb23a61d
 
-maybe use a GAN and do a style transfer on the user end: (probably easier to just use the pose estimation on the mobile phone and send only calculated keypoints - of closest human to the camera?)
+maybe use a GAN and do a style transfer on the user end:
+(probably easier to just use the pose estimation on the mobile phone 
+and send only calculated keypoints - of closest human to the cloud to do the classification?)
 
 * https://openaccess.thecvf.com/content/CVPR2023W/ECV/papers/Jia_BlazeStyleGAN_A_Real-Time_On-Device_StyleGAN_CVPRW_2023_paper.pdf
-
 
 
 - which XAI Method to detect which bodypart is wrongly positioned?
