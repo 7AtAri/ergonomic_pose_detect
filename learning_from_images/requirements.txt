@@ -1,0 +1,14 @@
+keyboard==0.13.5
+pyobjc_core==10.1
+pyobjc_framework_Cocoa==10.1
+pyobjc_framework_ExceptionHandling==10.1
+pyobjc_framework_Quartz==10.1
+Quartz==0.0.1.dev0
+
+numpy
+pandas
+opencv-python
+torch
+torchvision
+ultralytics
+pyyaml
