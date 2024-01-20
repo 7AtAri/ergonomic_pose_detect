@@ -1,0 +1,14 @@
+Package,Version,License
+keyboard,0.13.5,License Not Found
+pyobjc-core,10.1,MIT License
+pyobjc-framework-Cocoa,10.1,MIT License
+pyobjc-framework-ExceptionHandling,10.1,MIT License
+pyobjc-framework-Quartz,10.1,MIT License
+Quartz,No Version Specified,License Not Found
+numpy,No Version Specified,BSD License
+pandas,No Version Specified,BSD License
+opencv-python,No Version Specified,Apache Software License
+torch,No Version Specified,BSD License
+torchvision,No Version Specified,BSD
+ultralytics,No Version Specified,GNU Affero General Public License v3 or later (AGPLv3+)
+pyyaml,No Version Specified,License Not Found
