@@ -1,5 +1,5 @@
 
-# doesn't work in venv
+# doesn't work in .venv
 
 import sys
 #import platform
