@@ -4,27 +4,64 @@ import objc
 from PyObjCTools import AppHelper
 import threading
 
+class FrameView(Cocoa.NSView):
+    def initWithFrame_(self, frame):
+        self = objc.super(FrameView, self).initWithFrame_(frame)
+        if not self:
+            return None
+        # Additional initialization if needed
+        return self
+
+    def drawRect_(self, rect):
+        print("Drawing frame")  # Debug log
+        frame_width = 5
+        offset_for_menu_bar = 36 # Adjust this value as needed
+
+        frame_color = Cocoa.NSColor.redColor()
+         # Correct usage for setting the color
+        frame_color.setStroke()  # Use setStroke() for stroking paths
+
+        # Get the original bounds of the view
+        original_bounds = self.bounds()
+
+        # Create a new rectangle for the frame, inset by frame_width / 2
+        # and adjusted downward by offset_for_menu_bar
+        frame_rect = Cocoa.NSMakeRect(
+            original_bounds.origin.x + frame_width / 2,
+            original_bounds.origin.y + frame_width / 2 ,
+            original_bounds.size.width - frame_width,
+            original_bounds.size.height - frame_width - offset_for_menu_bar
+        )
+
+        frame_path = Cocoa.NSBezierPath.bezierPathWithRect_(frame_rect)
+        frame_path.setLineWidth_(frame_width)
+        frame_path.stroke()
+
 class TransparentWindow(Cocoa.NSWindow):
     def initWithContentRect_styleMask_backing_defer_(self, contentRect, styleMask, bufferingType, defer):
         self = objc.super(TransparentWindow, self).initWithContentRect_styleMask_backing_defer_(contentRect, styleMask, bufferingType, defer)
+        
         if not self:
             return None
 
         self.setOpaque_(False)
-        self.setBackgroundColor_(Cocoa.NSColor.clearColor)
-        self.setLevel_(Quartz.kCGFloatingWindowLevel)
+        self.setBackgroundColor_(Cocoa.NSColor.clearColor())
+        #self.setLevel_(Quartz.kCGFloatingWindowLevel)
+        self.setLevel_(Quartz.kCGOverlayWindowLevel)
         self.setStyleMask_(Cocoa.NSWindowStyleMaskBorderless)
+        self.setIgnoresMouseEvents_(True)  # Ignore mouse events
+
+         # Set the custom view for drawing the frame
+        #frameView = FrameView.alloc().initWithFrame_(contentRect)
+        frameView = FrameView.alloc().initWithFrame_(self.frame())
+        self.setContentView_(frameView)
+
+        # Keep the window on top
+        self.setLevel_(Quartz.kCGMaximumWindowLevelKey)
 
         return self
 
-    def drawRect_(self, rect):
-        print("drawRect_ called")  # Debug log
-        frame_width = 20
-        frame_color = Cocoa.NSColor.greenColor
-        frame_path = Cocoa.NSBezierPath.bezierPathWithRect_(Cocoa.NSInsetRect(self.frame(), frame_width / 2, frame_width / 2))
-        frame_color.set()
-        frame_path.setLineWidth_(frame_width)
-        frame_path.stroke()
+
 
 class AppDelegate(Cocoa.NSObject):
     def applicationDidFinishLaunching_(self, notification):
@@ -38,6 +75,7 @@ class AppDelegate(Cocoa.NSObject):
 
 def stop_application():
     AppHelper.stopEventLoop()
+
 
 app = Cocoa.NSApplication.sharedApplication()
 delegate = AppDelegate.alloc().init()
