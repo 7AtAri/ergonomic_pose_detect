@@ -1,10 +1,9 @@
 keyboard==0.13.5
-pyobjc_core==10.1
-pyobjc_framework_Cocoa==10.1
-pyobjc_framework_ExceptionHandling==10.1
-pyobjc_framework_Quartz==10.1
-Quartz==0.0.1.dev0
-
+pyobjc-core==10.1
+pyobjc-framework-Cocoa==10.1
+pyobjc-framework-ExceptionHandling==10.1
+pyobjc-framework-Quartz==10.1
+Quartz
 numpy
 pandas
 opencv-python
