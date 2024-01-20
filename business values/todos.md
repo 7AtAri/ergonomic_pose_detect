@@ -15,9 +15,9 @@ workload distribution:
 ---> B2B2C? Physical therapy studio package: (single-pose) Due to personal shortage as addition to the physical therapy sessions or as a help to do the exercises correctly at home
 
 4. [-> after 6?] Technology: why is it unique **[Ari, Vipin]**
- * PEST analysis (see slides 13.12.)
+ * PEST analysis (see slides 13.12.) -> done
  * 5 forces analysis (slides 13.12.)
- * eventually swot analysis (slides chapter 9 - part II)
+ * swot analysis (slides chapter 9 - part II) -> done
  * R&D (research results for technologies)
  * check if licences needed for involved packages, pose estimation models etc.?
     
@@ -32,7 +32,6 @@ workload distribution:
    
 6. Competition: who else is in the game (expect numerous, if it is something intersting) **[Nour, Polina]**
   * market analysis
-  * swot analysis (slides chapter 9 - part II)
   * competitor analysis (slides chapter 9 - part II) -> add up revenues of main competitors to estimate growth etc
                                         -> statista might not be enough, try to get overview/statisics
   * important: choice of competitive strategy (slides 20.12.)
