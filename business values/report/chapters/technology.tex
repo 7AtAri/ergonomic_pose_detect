@@ -1,5 +1,8 @@
 
-Notes by Ari
+by Ari Wahl
+
+For our Ergonomic Pose App "PostureFix" we will use YOLO v8 pose as a base model. It can also run on mobile devices (Android and Os) with 6-7 frames per second\cite{https://github.com/ultralytics/ultralytics/issues/4333}, which is more than enough for our application. For data protection and privacy we will send only the keypoints from the pose detection the be evaluated online on our classification layer or alternatively run the model as a lightweight application completely on the users devices. Either way, this ensures that there is no threat for businesses or private persons as customers to be victims of spy attacs. Just having keypoints would only allow for an extremely abstract representation and is therefore a perfect measure to protect the data and privacy of our customers. For the adaption of the YOLOv8 pose model for our application, we train a classification layer on basis of the keypoint representation. To evaluate, if a pose is ergonomic or not, we collected a dataset, which uses classification levels from the well established RULA (Rapid Upper Limb Assessment) employee assessment worksheed\cite{https://www.researchgate.net/publication/362455275_Home_office_versus_ergonomic_workstation_-_is_the_ergonomic_risk_increased_when_working_at_the_dining_table_An_inertial_motion_capture_based_pilot_study}.
+
 
 Modules / Packages used so far: 
 
