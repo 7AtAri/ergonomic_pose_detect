@@ -8,8 +8,10 @@
 \usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref}  
 \usepackage{memhfixc} 
 \usepackage{pdfsync} 
+\setlength{\headheight}{14pt} % Runden Sie auf die nächste ganze Zahl auf
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+\usepackage{lmodern} % Add this line to use the lmodern font
 \usepackage[backend=biber,style=numeric,sorting=none,minbibnames=1]{biblatex}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{float}
@@ -21,6 +23,7 @@
 \usepackage{subcaption}
 \usepackage{microtype}
 \usepackage{hyperref}
+
 
 \addbibresource{references.bib}
 \graphicspath{{figures/}}
