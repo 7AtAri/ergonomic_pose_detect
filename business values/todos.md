@@ -18,8 +18,8 @@ workload distribution:
  * PEST analysis (see slides 13.12.) -> done
  * 5 forces analysis (slides 13.12.)
  * swot analysis (slides chapter 9 - part II) -> done
- * R&D (research results for technologies)
- * check if licences needed for involved packages, pose estimation models etc.?
+ * R&D (research results for technologies) -> done
+ * check if licences needed for involved packages, pose estimation models etc.? -> done
     
 5. [-> after 4 and 6?] Marketing and sales: how will you sell it **[Nour, Polina, Pavlo]**
  * marketing methods (slides 13.12.)
@@ -38,7 +38,7 @@ workload distribution:
   * if there are competitors -> cluster them ("strategic groups" slides chapter 9 - part II)
 
 7. Team: who will implement the plan **[Ari, Vipin, Pavlo]**
- * app + design (+ MockUP)
+ * app + design (+ MockUP) -> done
  * resources needed (numbers!)
  * choosing a company legal structure (lecture 2)
  * choosing company organization structure (lecture 2)
