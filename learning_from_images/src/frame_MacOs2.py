@@ -17,7 +17,8 @@ class FrameView(Cocoa.NSView):
         frame_width = 5
         offset_for_menu_bar = 36 # Adjust this value as needed
 
-        frame_color = Cocoa.NSColor.redColor()
+        #frame_color = Cocoa.NSColor.yellowColor()
+        frame_color = Cocoa.NSColor.colorWithCalibratedRed_green_blue_alpha_(0.2, 1, 0.2, 0.3)
          # Correct usage for setting the color
         frame_color.setStroke()  # Use setStroke() for stroking paths
 
@@ -92,7 +93,8 @@ quitMenuItem = Cocoa.NSMenuItem.alloc().initWithTitle_action_keyEquivalent_("Qui
 appMenu.addItem_(quitMenuItem)
 appMenuItem.setSubmenu_(appMenu)
 
-# Set the timer to stop the application after 10 seconds
-threading.Timer(10.0, stop_application).start()
+# Set the timer to stop the application after x seconds
+x= 60
+threading.Timer(x, stop_application).start()
 
 AppHelper.runEventLoop()
