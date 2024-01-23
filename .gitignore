@@ -1,5 +1,8 @@
 # CUSTOM ADDED
 
+# Microsoft Artifacts
+~$*
+
 # Pytorch_models
 *.pt
 
