@@ -16,11 +16,54 @@ to the customer. Also we plan to optionally leverage Explainable AI methods to i
 For our applications we use the following modules and packages so far: ultralytics YOLO, openCV, Numpy, Pillow, Cocoa, Quartz, objc, PyObjCTools. 
 
 
+
+\section{Mock-up}
+
+For our mock-up we decided to use the traffic light colored-scheme that will be displayed as a frame. 
+The frame will be green if the user's posture is correct, yellow if the posture is not optimal and should be changed soon and red if the posture is bad and should be changed immediately.
+As you can see, a darker green is chosen, to make sure that the user is not distracted, if their posture is fine.
+In the working setup, the user does not see their own image but instead the usul screen content. The feedback-frame will be displayed around the screen content. 
+For the mock-up we will also show the keypoints our base model detected. The keypoints will be displayed as dots in the image. The user can choose if we will also provide a visual feedback in the form of a small window that will be displayed in the corner of the user's screen.
+There it would then display the keypoint where the user's posture is bad and should be corrected in a different color than the other keypoints. 
+In a more advanced state, we can also output an arrow in the image on how/which direction to correct the posture next to the highlighted parts.
+
+\begin{figure}[ht]
+    %\centering
+    \includegraphics[width=15cm]{screen-green.png}
+\end{figure}
+
+\begin{figure}[ht]
+    %\centering
+    \includegraphics[width=15cm]{screen-yellow.png}
+\end{figure}
+
+\begin{figure}[ht]
+    %\centering
+    \includegraphics[width=15cm]{screen-red.png}
+\end{figure}
+
+\begin{figure}[ht]
+    %\centering
+    \includegraphics[width=15cm]{mock_up_green.png}
+\end{figure}
+
+\begin{figure}[ht]
+    %\centering
+    \includegraphics[width=15cm]{mock_up_red.png}
+\end{figure}
+
+\begin{figure}[ht]
+    %\centering
+    \includegraphics[width=15cm]{mock_up_yellow2.png}
+\end{figure}
+
+
+
+\section{PEST-Analysis}
+
 A PEST-analysis was done to evaluate the external factors that might influence our business. Since this includes political, economic, social and technological factors, 
 and we focus on the technological factors in this chapter, we decided to include the PEST-analysis in this chapter. And since we are a startup, we also included a 
 SWOT-analysis, that was informed by the PEST-analysis. 
-
-\section{PEST-Analysis}
 
 \subsection{Political Factors}
 
@@ -138,44 +181,3 @@ SWOT-analysis, that was informed by the PEST-analysis.
     %\centering
     \includegraphics[width=17.5cm]{SWOT_analysis.png}
 \end{figure}
-
-\section{Mock-up}
-
-For our mock-up we decided to use the traffic light colored-scheme that will be displayed as a frame. 
-The frame will be green if the user's posture is correct, yellow if the posture is not optimal and should be changed soon and red if the posture is bad and should be changed immediately.
-As you can see, a darker green is chosen, to make sure that the user is not distracted, if their posture is fine.
-In the working setup, the user does not see their own image but instead the usul screen content. The feedback-frame will be displayed around the screen content. 
-For the mock-up we will also show the keypoints our base model detected. The keypoints will be displayed as dots in the image. The user can choose if we will also provide a visual feedback in the form of a small window that will be displayed in the corner of the user's screen.
-There it would then display the keypoint where the user's posture is bad and should be corrected in a different color than the other keypoints. 
-In a more advanced state, we can also output an arrow in the image on how/which direction to correct the posture next to the highlighted parts.
-
-\begin{figure}[ht]
-    %\centering
-    \includegraphics[width=15cm]{screen-green.png}
-\end{figure}
-
-\begin{figure}[ht]
-    %\centering
-    \includegraphics[width=15cm]{screen-yellow.png}
-\end{figure}
-
-\begin{figure}[ht]
-    %\centering
-    \includegraphics[width=15cm]{screen-red.png}
-\end{figure}
-
-\begin{figure}[ht]
-    %\centering
-    \includegraphics[width=15cm]{mock_up_green.png}
-\end{figure}
-
-\begin{figure}[ht]
-    %\centering
-    \includegraphics[width=15cm]{mock_up_red.png}
-\end{figure}
-
-\begin{figure}[ht]
-    %\centering
-    \includegraphics[width=15cm]{mock_up_yellow2.png}
-\end{figure}
-
