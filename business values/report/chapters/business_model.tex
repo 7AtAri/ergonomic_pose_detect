@@ -98,11 +98,12 @@ There are following assumptions in the business plan presented below: the subscr
 \p
 As we can see from the table \ref{fig:budget} and graph \ref{fig:breakeven_no_salary}, we expect a net profit just in the 8th month. But given that the founders have foregone their salary, true breakeven point is in the end of the second year, as shown in graph \ref{fig:breakeven_salary}.
 
+\renewcommand{\arraystretch}{1.5} % Adjust the factor to increase row height
 \begin{table}[]
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
         \hline
-        Month & Customers & Subscriptions & \begin{tabular}[c]{@{}l@{}}Ad \\ revenue\end{tabular} & \begin{tabular}[c]{@{}l@{}}Subscription\\ revenue\end{tabular} & \begin{tabular}[c]{@{}l@{}}Summary\\ income\end{tabular} & \begin{tabular}[c]{@{}l@{}}Summary\\ expenses\end{tabular} & \begin{tabular}[c]{@{}l@{}}Summary\\ personal cost\end{tabular} & VAT        & Net Profit  & Corporate tax & Profit after tax & Personal profit \\ \hline
+        \textbf{Month} & \textbf{Customers} & \textbf{Subscriptions} & \begin{tabular}[c]{@{}l@{}}\textbf{Ad} \\ \textbf{revenue}\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Subscription}\\ \textbf{revenue}\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Summary}\\ \textbf{income}\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Summary}\\ \textbf{expenses}\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Summary}\\ \textbf{personal cost}\end{tabular} & \textbf{VAT}        & \textbf{Net Profit}  & \textbf{Corporate tax} & \textbf{Profit after tax} & \textbf{Personal profit} \\ \hline
         0     & 0         & 0             & 0                                                     & 0                                                              & 0                                                        & 65000                                                      & 157500                                                          & -12350     & -65000      & 0             & -65000           & -222500         \\ \hline
         1     & 200       & 0             & 780                                                   & 0                                                              & 780                                                      & 68550                                                      & 183750                                                          & -12876.3   & -67770      & 0             & -67770           & -251520         \\ \hline
         2     & 400       & 40            & 1404                                                  & 510                                                            & 2694                                                     & 72100                                                      & 210000                                                          & -13187.14  & -69406      & 0             & -69406           & -279406         \\ \hline
@@ -132,6 +133,7 @@ As we can see from the table \ref{fig:budget} and graph \ref{fig:breakeven_no_sa
     \caption{Planned business performance}
     \label{fig:budget}
 \end{table}
+\renewcommand{\arraystretch}{1} % Adjust the factor to increase row height
 
 \begin{figure}[H]
     \centering
@@ -142,7 +144,7 @@ As we can see from the table \ref{fig:budget} and graph \ref{fig:breakeven_no_sa
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/breakeven_salary.png}
+    \includegraphics[width=0.7\textwidth]{figures/breakeven_salary.png}
     \caption{Breakeven point including founder's personal cost}
     \label{fig:breakeven_salary}
 \end{figure}
