@@ -35,6 +35,7 @@ The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.
 
 ## Business Model proposition
 
-- [presentation](ergonomic_pose_detect/business values/presentation/PoseFix.pdf)
+- [presentation](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/presentation/PoseFix.pdf)
+- [report]()
 
 
