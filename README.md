@@ -33,9 +33,9 @@ The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
 
-## Business Model proposition
+## Business Model proposal
 
 - [presentation](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/presentation/PoseFix.pdf)
-- [report]()
+- [report](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/report/main.pdf)
 
 
