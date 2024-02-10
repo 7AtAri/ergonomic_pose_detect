@@ -7,6 +7,8 @@
 
 ## todo checklist
 
+- [x] set up own dataset
+
 - [ ] implement fine-tuning pipeline for yolo
 
 - [ ] keypoint angle calculation + rula rule assessment of ergonomic status
