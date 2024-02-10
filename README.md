@@ -2,7 +2,7 @@
       
 - for learning from images (readme in folder)
 
-[important links](learning_from_images/todo.md)
+- [important links](learning_from_images/todo.md)
 
 
 ## todo checklist
