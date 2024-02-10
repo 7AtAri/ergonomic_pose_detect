@@ -14,4 +14,3 @@ The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.
 ## Links
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
-
