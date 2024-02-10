@@ -20,3 +20,5 @@
 - [ ] implement fine-tuning pipeline for other state-of-the-art models
 
 - [ ] evaluation set up with metrics (see idea presentation)
+
+- [ ] prepare keynote/ppt presentation 
