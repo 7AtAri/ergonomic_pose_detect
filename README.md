@@ -8,7 +8,11 @@
 ## todos
 
 [] implement fine-tuning pipeline for yolo
+
 [] keypoint angle calculation + rula rule assessment of ergonomic status
+
 [] integrate additional images into the dataset class folders
+
 [] split our dataset into training/testing dataset
+
 [] implement fine-tuning pipeline for other state-of-the-art models
