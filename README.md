@@ -35,4 +35,6 @@ The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.
 
 ## Business Model proposition
 
+- [presentation](business values/presentation/PoseFix.pdf)
+
 
