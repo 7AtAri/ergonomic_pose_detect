@@ -1,9 +1,8 @@
-# ergonomic posture detection - 
-      
+# ergonomic posture detection
+
 - for learning from images
 
 - [important links](learning_from_images/todo.md)
-
 
 ## todo checklist
 
@@ -21,9 +20,9 @@
 
 - [ ] integrate additional images into the dataset class folders
 
-- [ ] implement simple pytorch model as baseline 
+- [ ] implement simple pytorch model as baseline
 
-- [ ] implement mediapipe in our fine-tune pipeline 
+- [ ] implement mediapipe in our fine-tune pipeline
 
 - [ ] implement fine-tuning pipeline for other state-of-the-art models
 
@@ -33,8 +32,7 @@
 
 - [ ] train our models
 
-- [ ] prepare keynote/ppt presentation 
-
+- [ ] prepare keynote/ppt presentation
 
 ## Out created dataset
 
@@ -49,5 +47,3 @@ The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.
 
 - [presentation](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/presentation/PoseFix.pdf)
 - [report](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/report/main.pdf)
-
-
