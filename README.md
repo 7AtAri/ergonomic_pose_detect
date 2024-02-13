@@ -11,7 +11,7 @@
 
 - [x] implement fine-tuning pipeline for yolo
 
-- [ ] keypoint angle calculation + rula rule assessment of ergonomic status
+- [x] keypoint angle calculation + rula rule assessment of ergonomic status
 
 - [ ] integrate additional images into the dataset class folders
 
@@ -19,7 +19,9 @@
 
 - [ ] implement fine-tuning pipeline for other state-of-the-art models
 
-- [x ] evaluation set up with metrics (see idea presentation)
+- [x] evaluation set up with metrics (see idea presentation)
+
+- [ ] train our models
 
 - [ ] prepare keynote/ppt presentation 
 
