@@ -8,7 +8,7 @@
 
 - [x] set up own dataset
 
-- [ ] add additional photos to dataset
+- [ ] add additional images into the dataset class folders
 
 - [x] split our dataset into training/testing dataset
 
@@ -18,13 +18,11 @@
 
 - [x] keypoint angle calculation + rula rule assessment of ergonomic status
 
-- [ ] integrate additional images into the dataset class folders
-
 - [ ] implement simple pytorch model as baseline
 
 - [ ] implement mediapipe in our fine-tune pipeline
 
-- [ ] implement fine-tuning pipeline for other state-of-the-art models
+- [ ] (or implement fine-tuning pipeline for other state-of-the-art models)
 
 - [x] evaluation set up with metrics (see idea presentation)
 
@@ -39,7 +37,7 @@
 You can find the dataset we created for posture estimation on [BHT cloud](https://cloud.bht-berlin.de/index.php/s/3HTdw2MXqFR5SJy).
 The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf)
 
-## Model documentation
+## Model documentations
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
 
