@@ -5,3 +5,6 @@ torch
 torchvision
 ultralytics
 pyyaml
+ipykernel
+optuna
+scikit-learn
