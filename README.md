@@ -8,7 +8,7 @@
 
 - [x] set up own dataset
 
-- [ ] add additional images into the dataset class folders
+- [x] add additional images into the dataset class folders
 
 - [x] split our dataset into training/testing dataset
 
@@ -18,11 +18,11 @@
 
 - [x] keypoint angle calculation + rula rule assessment of ergonomic status
 
-- [ ] implement simple pytorch model as baseline
+- [ ] ?implement simple pytorch model as baseline (may not be useful)
 
-- [ ] implement mediapipe in our fine-tune pipeline
+- [ ] (implement mediapipe in our fine-tune pipeline)
 
-- [ ] (or implement fine-tuning pipeline for other state-of-the-art models)
+- [ ] implement fine-tuning pipeline for other state-of-the-art (SOTA) model
 
 - [x] evaluation set up with metrics (see idea presentation)
 
