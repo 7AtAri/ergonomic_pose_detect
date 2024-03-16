@@ -1,18 +1,15 @@
 # debug file for project.ipynb
 
-
 from ultralytics import YOLO
-import cv2
+# import cv2
 import numpy as np
-from PIL import Image
+# from PIL import Image
 import torch
 import torch.nn as nn
 from torch.utils.data import random_split, DataLoader, Subset
 from torchvision import datasets, transforms
 import optuna
 from sklearn.metrics import f1_score, confusion_matrix
-import numpy as np
-
 
 model = YOLO('yolov8n-pose.pt')
 
@@ -161,10 +158,10 @@ def get_k_fold_indices(n, k=5, random_seed=None):
 
 def objective(trial):
     # Define hyperparameters to optimize
-    lr = trial.suggest_categorical("lr", [1e-4, 5e-4, 1e-3])
+    lr = trial.suggest_categorical("lr", [1e-4]) #, 5e-4, 1e-3])
     #momentum = trial.suggest_categorical("momentum", [0.9, 0.95])
     batch_size = trial.suggest_categorical("batch_size", [1])# 4, 8, 16]) # other batch sizes than 1 give an error unfortunately
-    num_epochs = trial.suggest_categorical("num_epochs", [100, 200, 300])
+    num_epochs = trial.suggest_categorical("num_epochs", [20]) #100, 200, 300])
 
     # convert dataset into a list for index-based access
     dataset = train_and_val_dataset
@@ -218,7 +215,7 @@ if __name__ == "__main__":
 
 
     study = optuna.create_study(direction='maximize')
-    study.optimize(objective, n_trials=20)  # run 20 trials
+    study.optimize(objective, n_trials=5)  # run 20 trials
 
     # Best hyperparameters
     print("Best hyperparameters:", study.best_params)
