@@ -73,7 +73,7 @@ def train_and_eval_model(kp_classifier_model, model, optimizer, num_epochs, trai
             optimizer.zero_grad()  # Zero the parameter gradients
             keypoints = get_keypoints_from_yolo(model, inputs) # get keypoints from the YOLO model
             processed_kps = process_keypoints_for_classifier(keypoints) # prepare the keypoints for the classifier
-            print("processed_kps type: {} , len: {}, kpts:{}".format(type(processed_kps), len(processed_kps[0]), processed_kps))
+            #print("processed_kps type: {} , len: {}, kpts:{}".format(type(processed_kps), len(processed_kps[0]), processed_kps))
             classification_output = kp_classifier_model(processed_kps) # get results for the classification 
             loss = criterion(classification_output , labels)  # Compute loss
             loss.backward()  # Backpropagate the loss
@@ -163,7 +163,7 @@ def objective(trial):
     # Define hyperparameters to optimize
     lr = trial.suggest_categorical("lr", [1e-4, 5e-4, 1e-3])
     #momentum = trial.suggest_categorical("momentum", [0.9, 0.95])
-    batch_size = trial.suggest_categorical("batch_size", [1])# 4, 8, 16])
+    batch_size = trial.suggest_categorical("batch_size", [1])# 4, 8, 16]) # other batch sizes than 1 give an error unfortunately
     num_epochs = trial.suggest_categorical("num_epochs", [100, 200, 300])
 
     # convert dataset into a list for index-based access
