@@ -10,7 +10,7 @@
 
 - [x] add additional images into the dataset class folders
 
-- [ ] add drive link to the dataset
+- [x] add drive link to the [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing)
 
 - [x] split our dataset into training/testing dataset
 
