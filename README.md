@@ -10,25 +10,33 @@
 
 - [x] add additional images into the dataset class folders
 
+- [ ] add drive link to the dataset
+
 - [x] split our dataset into training/testing dataset
 
 - [x] implement fine-tuning pipeline for yolo as feature extractor
 
-- [ ] adapt fine-tuning pipeline for frozen yolo with keypoint layer cut off and only classification head
+- [ ] adapt fine-tuning pipeline for frozen yolo with keypoint layer cut off and only classification head (Ari)
 
 - [x] keypoint angle calculation + rula rule assessment of ergonomic status
 
-- [ ] ?implement simple pytorch model as baseline (may not be useful)
+- [ ] implement mediapipe in our fine-tune pipeline (Fallback)
 
-- [ ] (implement mediapipe in our fine-tune pipeline)
-
-- [ ] implement fine-tuning pipeline for other state-of-the-art (SOTA) model
+- [ ] implement sota models - Whole Body Keypoints(mmpose) (Vipin)
 
 - [x] evaluation set up with metrics (see idea presentation)
 
 - [ ] experiment with additional ordinal loss
 
-- [ ] train our models
+- [ ] yolo keypoint model training
+
+- [ ] yolo keypoint angle model training
+
+- [ ] yolo finetuning
+
+- [ ] mmpose sota model keypoint model training
+
+- [ ] mmpose sota model finetuning
 
 - [ ] prepare keynote/ppt presentation
 
