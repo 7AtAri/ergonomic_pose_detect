@@ -1,9 +1,5 @@
 # Important Links
 
-## Our Dataset
-
-- [Pose Dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing)
-
 ## sources
 
 - [general](https://fritz.ai/human-pose-estimation/#9ee6)
@@ -14,6 +10,9 @@
 - repo for [Learning Delicate Local Representations for Multi-Person Pose Estimation](https://github.com/caiyuanhao1998/RSN/)
 - [getting joint angles from the model output](https://temugeb.github.io/python/motion_capture/2021/09/16/joint_rotations.html)
 
+## pose correction with language
+- [PoseFix](https://github.com/naver/posescript)
+  
 ## yolo pose vs google media pipe
 
 <https://learnopencv.com/yolov7-pose-vs-mediapipe-in-human-pose-estimation/>
