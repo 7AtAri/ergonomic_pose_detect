@@ -4,37 +4,33 @@
 
 - [important links](learning_from_images/todo.md)
 
-## todo checklist
+## Idea
 
-- [x] set up own dataset
+...
 
-- [x] add additional images into the dataset class folders
+## todo checklist / Steps 
 
-- [x] add drive link to the [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing)
-
-- [x] split our dataset into training/testing dataset
+- [x] set up our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing)
 
 - [x] implement fine-tuning pipeline for yolo as feature extractor
 
-- [ ] adapt fine-tuning pipeline for frozen yolo with keypoint layer cut off and only classification head (Ari)
+- [x] find yolo with cut off point and add classification head
+    
+- [x] implement yolo fine-tuning
 
 - [x] keypoint angle calculation + rula rule assessment of ergonomic status
 
-- [ ] implement mediapipe in our fine-tune pipeline (Fallback)
-
-- [ ] implement sota models - Whole Body Keypoints(mmpose) (Vipin)
+- [x] implement sota model - Whole Body Keypoints(mmpose) 
 
 - [x] evaluation set up with metrics (see idea presentation)
 
-- [ ] experiment with additional ordinal loss
-
-- [ ] yolo keypoint model training
+- [x] yolo keypoint model training
 
 - [ ] yolo keypoint angle model training
 
-- [ ] yolo finetuning
+- [x] yolo finetuning training
 
-- [ ] mmpose sota model keypoint model training
+- [x] mmpose sota model keypoint model training
 
 - [ ] mmpose sota model finetuning
 
@@ -49,7 +45,7 @@ The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
 
-## Business Model proposal
+## Business Model proposal for the final presentation of the "Business Values" module
 
 - [presentation](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/presentation/PoseFix.pdf)
 - [report](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/business%20values/report/main.pdf)
