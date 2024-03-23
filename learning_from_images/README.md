@@ -9,6 +9,11 @@
 ## Presentation Slides
 ...
 
+## Dataset 
+
+For this project we set up our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) with 120 images, that were manually annotated with regards of ergonomic posture. The postures are labeled with according to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf).
+
+
 ## Code
 
 ### Keypoint Visualization 
@@ -39,3 +44,10 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 
 ### Final results
 ...
+
+### Sources
+
+We collected some links for our [sources](learning_from_images/sources.md), as well as links for our
+Base-Model's documentation:
+- [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
+- [MMPose documentation](https://mmpose.readthedocs.io/en/latest/overview.html)
