@@ -2,7 +2,7 @@
 
 - for learning from images
 
-- [important links](learning_from_images/todo.md)
+- [sources](learning_from_images/sources.md)
 
 ## Idea
 
