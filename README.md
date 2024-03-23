@@ -41,9 +41,10 @@
 You can find the dataset we created for posture estimation on [BHT cloud](https://cloud.bht-berlin.de/index.php/s/3HTdw2MXqFR5SJy).
 The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf)
 
-## Model documentations
+## Base-Model documentations
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
+- [MMPose documentation](https://mmpose.readthedocs.io/en/latest/overview.html)
 
 ## Business Model proposal for the final presentation of the "Business Values" module
 
