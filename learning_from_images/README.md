@@ -20,6 +20,9 @@ For this project we set up our own [dataset](https://drive.google.com/drive/fold
 
 To gain a first glimpse into the functionalities and possibilities of pose estimation, we put up a [notebook to visualize keypoints](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset.
 
+Example:
+![green](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_green_kps.jpg)
+
 ### 4.2 Model Inspection and Expermiments
 
 We needed to find out where to cut the YOLOv8 Pose Layers for our fine-tuning.
