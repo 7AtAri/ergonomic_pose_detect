@@ -57,6 +57,9 @@ After an initial HPO of our models, we realized that setting a seed heavily infl
   - KeypointClassifier: ```{'lr': 0.001, 'h1': 1024, 'h2': 512, 'batch_size': 16, 'num_epochs': 100, 'seed': 23}```
   - KeypointScorer: ```{'lr': 5e-05, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 200, 'seed': 1986}```
 
+For the YOLOv8-pose model fine-tuning approach, we could not do any HPO due to computational restraints.
+We picked a few of the formerly good hyperparameters and took an educated guess on the others.
+
 ### 4.4 Model Training 
 
 (YOLOv8 Pose and RTMpose-wholebody)
@@ -68,11 +71,14 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 - 1) Scoring Models:
 
 As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
-This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model. 
+This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model.
+For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers.
 
 - 2) Classification Models:
 
-     
+For a second approach we grouped the 7 possible scores of the RULA worksheet to three classes.
+The first class, we call the "green" class, it describes a good posture, that can be kept for a long(er) period of time. This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time. Finally, the "red" class signals that the posture should be changed soon, even better immediately. It groups the RULA scores 6 and 7. For these three classes, we build a fully conneceted classification model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers.
+
 - 3) Classification + Keypoint Angle Models:
 
 #### 4.4.1 Fine-Tuning
