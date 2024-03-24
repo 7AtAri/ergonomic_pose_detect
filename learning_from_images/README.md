@@ -15,7 +15,7 @@ Since desk jobs require long hours of sitting on each workday, ergonomic sitting
 ### 3.1 Dataset Curation
 For this project we set up our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) with 118 images, that were manually annotated with regards of ergonomic posture. The postures are labeled with according to the RULA worksheet. We used all deskwork related scorings from the rulesheet. 
 
- <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/report/learning_from_images/präsi/RULA.pdf" width="300px"/>
+ <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/report/learning_from_images/präsi/RULA_2.png" width="300px"/>
 
 
 ### 3.2 Splitting the Dataset
