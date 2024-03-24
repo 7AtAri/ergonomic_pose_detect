@@ -72,12 +72,12 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 
 As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
 This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model.
-For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. 
+For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. We use MSE (Mean Squared Error) as loss function.
 
 - 2) Classification Models:
 
 For a second approach we grouped the 7 possible scores of the RULA worksheet to three classes.
-The first class, we call the "green" class, it describes a good posture, that can be kept for a long(er) period of time. This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time. Finally, the "red" class signals that the posture should be changed soon, even better immediately. It groups the RULA scores 6 and 7. For these three classes, we build a fully conneceted classification model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers.
+The first class, we call the "green" class, it describes a good posture, that can be kept for a long(er) period of time. This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time. Finally, the "red" class signals that the posture should be changed soon, even better immediately. It groups the RULA scores 6 and 7. For these three classes, we build a fully conneceted classification model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. We use Cross Entropy loss for the training.
 
 - 3) Classification + Keypoint Angle Models:
  
@@ -88,7 +88,11 @@ As a third feature extraction approach, we estimate seven keypoint angles. Keypo
 Like we explained before, the fine-tuning approach on the local machine only worked for the YOLOv8-pose model. To make it work, we needed to reduce the size of input images to 256 x 352 pixels as well as the number of episodes to 50 and we also needed to discard the HPO. As hyperparameters we used a learning rate of $1e^{-4}$, a first hidden layer with 2048 nodes, a second one with 1024 nodes and a third one with 512 nodes and a seed of 13. 
 
 ### 4.5 Evaluation
-...
+
+Since our 3 classes are balanced we used accuracy as a final metric. 
+
+ <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="600px"/>
+
 
 ## 5. Final results
 ...
