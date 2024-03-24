@@ -1,4 +1,4 @@
-# ergonomic posture detection
+# Ergonomic Posture Detection
 
 - for learning from images ([documentation](https://github.com/7AtAri/ergonomic_pose_detect/tree/main/learning_from_images))
 - for business values 
@@ -39,12 +39,12 @@ Since desk jobs require long hours of sitting on each workday, ergonomic sitting
 
 - [x] prepare keynote/ppt presentation
 
-## Out created dataset
+## Out own Dataset
 
 You can find the dataset we created for posture estimation on [BHT cloud](https://cloud.bht-berlin.de/index.php/s/3HTdw2MXqFR5SJy).
 The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf)
 
-## Base-Model documentations
+## Base-Model Documentations
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
 - [MMPose documentation](https://mmpose.readthedocs.io/en/latest/overview.html)
