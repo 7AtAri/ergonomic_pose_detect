@@ -93,7 +93,7 @@ Like we explained before, the fine-tuning approach on the local machine only wor
 
 Since our 3 classes are balanced we used accuracy as a final metric. These are the confusion matrices for our four classification models: 
 
- <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="600px"/>
+ <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="700px"/>
 
 #### 4.5.2 Scoring Models
 
