@@ -17,11 +17,11 @@ For this project we set up our own [dataset](https://drive.google.com/drive/fold
 
 ## 4. Code
 
-Disclaimer: All the training had to be done on a local machine, because the university cluster is at the moment not accessible due to a cyber attack. This puts heavy computational restraints on our work, especially with regard to the fine-tuning.
+Disclaimer: All the training had to be done on a local machine, because the university cluster is not accessible at the moment due to a cyber attack. This puts heavy computational restraints on our work, especially with regard to model fine-tuning.
 
 ### 4.1 Keypoint Visualization 
 
-We started the project by gaining a first glimpses into the functionalities and possibilities of pose estimation. Therefore we created a [notebook to visualize the keypoints](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset with Ultralytics' YOLOv8-Pose.
+We started the project by gaining a first glimpse into the functionalities and possibilities of pose estimation. Therefore we created a [notebook to visualize the keypoints](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset with Ultralytics' YOLOv8-Pose.
 
 RTMpose-wholebody vs YOLOv8-Pose:
 
@@ -32,12 +32,8 @@ RTMpose-wholebody vs YOLOv8-Pose:
 
 ### 4.2 Model Inspection and Experiments
 
-We needed to find out where to cut the YOLOv8 Pose Layers for our fine-tuning.
-This turned out to be quite complicated, since the YOLO models seem to come with
-an ultralytics wrapper, whose source code is not open. After some experiments, we managed to cut the model after the pose head but before the final keypoints are outputted. There is a way to cut the YOLO model at any other point. But then the YOLO wrapper will be lost, and the model does not work anymore. 
-We also looked inside the RTMpose-wholebody model and realized it has a size of >30 million parameters.
-Since the fine-tuning of YOLOv8 already took almost all V-RAM, we then knew, that we were not able to fine-tune the model on the local machine.
-But in general it seemed to be easier to cut with the model instact, since it has two final linear layers, that are probably used to calculate the keypoints. This is not the case with YOLOv8 pose, which oddly ends with a convolutional layer whose output is then probably processed in a (non-accessible) Wrapper.
+To fine-tune YOLOv8-pose, it is necessary to find a good point to cut the YOLOv8-Pose Layers from the original model and to add our classification head. Unfortunately for the YOLOv8 model family this turned out to be quite complicated, since the YOLO models seem to come with an ultralytics wrapper, whose source code is not open. After some experiments, we managed to cut the model after the pose head but before the final keypoints are outputted. It is in general also possible to cut the YOLO model at any other point. But then the YOLO wrapper will be lost, and this results in the model not working properly anymore. So, after model inspection, we decided to take the only possible option to cut the YOLOv8-pose model.
+For the task of fine-tuning the RTMpose-wholebody model, we printed a model summary and realized it has a size of >30 million parameters. Since the fine-tuning of YOLOv8 already took almost all V-RAM, we then knew, that we were not able to fine-tune the model on the local machine. But in general it seems to be a lot easier to cut with the model instact, since it has two final linear layers, that are probably used to calculate the keypoints. The MMPose framework, where we got the RTMpose-wholebody model from, also has implemented backbone, neck and head methods, which make the MMPose models quite accessible for fine-tuning. This is not the case with YOLOv8 pose, which oddly ends with a convolutional layer whose output is then probably processed in a (non-accessible) wrapper method, that comes with the ultralytics package.
 You can find our model inspection notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/pytorch_model_inspection.ipynb) and our YOLO model slicing notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/yolo_model_slicing.ipynb). 
 
 ### 4.3 Hyperparameter Optimization
