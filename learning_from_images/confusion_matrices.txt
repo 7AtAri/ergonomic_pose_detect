@@ -1,0 +1,28 @@
+YOLO as Keypoint Detector:
+Test accuracy: 0.5652173913043478
+Confusion matrix:
+tensor([[3., 0., 1.],
+        [0., 5., 4.],
+        [0., 5., 5.]])
+
+MMPose as Keypoint Detector:
+Test accuracy: 0.6086956521739131
+Confusion matrix:
+tensor([[4., 0., 0.],
+        [2., 7., 0.],
+        [3., 4., 3.]])
+
+YOLO as Keypoint Detector together with Angles:
+Test accuracy: 0.6086956521739131
+Confusion matrix:
+tensor([[4., 0., 0.],
+        [1., 4., 4.],
+        [1., 3., 6.]])
+
+
+Finetuned YOLO:
+Test accuracy: 0.391304347826087
+Confusion matrix:
+tensor([[ 0.,  4.,  0.],
+        [ 0.,  9.,  0.],
+        [ 0., 10.,  0.]])
