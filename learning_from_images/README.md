@@ -30,7 +30,7 @@ RTMpose-wholebody vs YOLOv8-Pose:
   <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
 </p>
 
-### 4.2 Model Inspection and Expermiments
+### 4.2 Model Inspection and Experiments
 
 We needed to find out where to cut the YOLOv8 Pose Layers for our fine-tuning.
 This turned out to be quite complicated, since the YOLO models seem to come with
