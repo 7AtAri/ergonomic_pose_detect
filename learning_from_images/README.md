@@ -64,8 +64,9 @@ After an initial HPO of our models, we realized that setting a seed heavily infl
 After putting up notebooks for every single pipeline, we set up one singular clean notebook with our main training and evluation setup for an [all model comparison](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/all_model_comparison.ipynb). Please use this notebook as the main reference for our project.
 
 #### 4.4.1 Feature Extraction
+
 As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
-We tried this approach 
+This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model. 
 
 #### 4.4.1 Fine-Tuning
 ...
