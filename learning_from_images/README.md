@@ -72,7 +72,7 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 
 As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
 This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model.
-For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers.
+For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. 
 
 - 2) Classification Models:
 
