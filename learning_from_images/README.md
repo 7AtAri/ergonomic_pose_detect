@@ -1,5 +1,7 @@
 
-# Learning from Images project: Ergonomic Pose Detection
+# Project Documentation: Ergonomic Pose Detection
+
+Vipin Singh and Ari Wahl
 
 ## 1. Idea
 ...
@@ -33,7 +35,10 @@ RTMpose-wholebody vs YOLOv8pose:
 
 We needed to find out where to cut the YOLOv8 Pose Layers for our fine-tuning.
 This turned out to be quite complicated, since the YOLO models seem to come with
-an ultralytics wrapper, whose source code is not open. After some experiments, we managed to cut the model after the pose head but before the final keypoints are outputted.  
+an ultralytics wrapper, whose source code is not open. After some experiments, we managed to cut the model after the pose head but before the final keypoints are outputted. There is a way to cut the YOLO model at any other point. But then the YOLO wrapper will be lost, and the model does not work anymore. 
+We also looked inside the RTMpose-wholebody model and realized it has a size of >30 million parameters.
+Since the fine-tuning of YOLOv8 already took almost all V-RAM, we then knew, that we were not able to fine-tune the model on the local machine.
+But in general it seemed to be easier to cut with the model instact, since it has two final linear layers, that are probably used to calculate the keypoints. This is not the case with YOLOv8 pose, which oddly ends with a convolutional layer whose output is then probably processed in a (non-accessible) Wrapper.
 You can find our model inspection notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/pytorch_model_inspection.ipynb) and our YOLO model slicing notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/yolo_model_slicing.ipynb). 
 
 ### 4.3 Hyperparameter Optimization
