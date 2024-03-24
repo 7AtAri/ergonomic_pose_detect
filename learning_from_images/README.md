@@ -20,11 +20,11 @@ Disclaimer: All the training had to be done on a local machine, because the univ
 
 ### 4.1 Keypoint Visualization 
 
-To gain a first glimpse into the functionalities and possibilities of pose estimation, we put up a [notebook to visualize keypoints] (https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset with YOLOv8pose. 
+To gain a first glimpse into the functionalities and possibilities of pose estimation, we put up a [notebook to visualize keypoints](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset with YOLOv8pose. 
 
 Examples:
 
-<img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_green_kps.jpg" width="300px" />
+<img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px" />
 
 
 ### 4.2 Model Inspection and Expermiments
