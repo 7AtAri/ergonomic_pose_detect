@@ -55,7 +55,8 @@ After an initial HPO of our models, we realized that setting a seed heavily infl
 After putting up notebooks for every single pipeline, we set up one singular clean notebook with our main training and evluation setup for an [all model comparison](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/all_model_comparison.ipynb). Please use this notebook as the main reference for our project.
 
 #### 4.4.1 Feature Extraction
-As a first step we used the 7 scores 
+As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
+We tried this approach 
 
 #### 4.4.1 Fine-Tuning
 ...
