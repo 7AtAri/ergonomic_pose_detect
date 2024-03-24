@@ -4,7 +4,7 @@
 Vipin Singh and Ari Wahl
 
 ## 1. Idea
-...
+Problem:
 
 [color feedback frame for MacOs](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/frame_MacOs2.py)
 
