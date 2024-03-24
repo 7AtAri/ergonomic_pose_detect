@@ -65,3 +65,4 @@ We collected some links for our [sources](learning_from_images/sources.md), as w
 Base-Model's documentation:
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
 - [MMPose documentation](https://mmpose.readthedocs.io/en/latest/overview.html)
+- [fine-tuning MMPose Models](https://mmpose.readthedocs.io/en/latest/advanced_guides/implement_new_models.html)
