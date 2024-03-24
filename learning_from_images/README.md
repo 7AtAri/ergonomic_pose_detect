@@ -65,8 +65,15 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 
 #### 4.4.1 Feature Extraction
 
+- 1) Scoring Models:
+
 As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
 This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model. 
+
+- 2) Classification Models:
+
+     
+- 3) Classification + Keypoint Angle Models:
 
 #### 4.4.1 Fine-Tuning
 ...
