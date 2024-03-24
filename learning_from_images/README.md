@@ -85,7 +85,7 @@ As a third feature extraction approach, we estimate seven keypoint angles. Keypo
 
 #### 4.4.2 Fine-Tuning 
 
-Like we explained before, the fine-tuning approach on the local machine only worked for the YOLOv8-pose model. To make it work, we needed to reduce the size of input images to 256 x 352 pixels as well as the number of episodes to 50 and we also needed to discard the HPO. As hyperparameters we used a learning rate of $1*e^{-4}$, a first hidden layer with 2048 nodes, a second one with 1024 nodes and a third one with 512 nodes and a seed of 13. 
+Like we explained before, the fine-tuning approach on the local machine only worked for the YOLOv8-pose model. To make it work, we needed to reduce the size of input images to 256 x 352 pixels as well as the number of episodes to 50 and we also needed to discard the HPO. As hyperparameters we used a learning rate of $1e^{-4}$, a first hidden layer with 2048 nodes, a second one with 1024 nodes and a third one with 512 nodes and a seed of 13. 
 
 ### 4.5 Evaluation
 ...
