@@ -89,7 +89,7 @@ Like we explained before, the fine-tuning approach on the local machine only wor
 
 ### 4.5 Evaluation
 
-Since our 3 classes are balanced we used accuracy as a final metric. 
+Since our 3 classes are balanced we used accuracy as a final metric. These are the confusion matrices for our final four models. The results of the scoring model were that bad, that we did not follow up on them.
 
  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="600px"/>
 
