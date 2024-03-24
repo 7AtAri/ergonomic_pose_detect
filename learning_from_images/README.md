@@ -38,11 +38,8 @@ You can find our model inspection notebook [here](https://github.com/7AtAri/ergo
 
 ### 4.3 Hyperparameter Optimization
 
-To find the best hyperparameters, we used the optuna framework.
-Finally, we only used a grid search algorithm, but it is easy to just switch the
-search algorithm, to take advantage of all the possibilities that optuna offers.
-Take a look at our HPO setup in our notebooks for [YOLO HPO](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/yolo_hpo.ipynb) and for [MMPose](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/mmpose_hpo.ipynb) if you like.
-After an initial HPO of our models, we realized that setting a seed heavily influenced our results.
+To find the best hyperparameters, we used the optuna framework. Finally, we only used a grid search algorithm, but it is easy to just switch the search algorithm, to take advantage of all the possibilities that optuna offers. Take a look at our HPO setup in our notebooks for [YOLO HPO](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/yolo_hpo.ipynb) and for [MMPose](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/mmpose_hpo.ipynb) if you like.
+After an initial HPO of our models, we realized that setting a seed heavily influenced our results. Due to computational restraints we then didn't rerun our HPO including the seed, which would be the better approach, but resided to now just do another HPO on the seed for all the models while keeping the initial other best parameters fixed. You will find this seed optimization notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/report/learning_from_images/src/hpo_model_seeds.ipynb).
 
 ### 4.4 Model Training and Evaluations
 
