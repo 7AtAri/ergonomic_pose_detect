@@ -26,15 +26,15 @@
 
 - [x] yolo keypoint model training
 
-- [ ] yolo keypoint angle model training
+- [x] yolo keypoint angle model training
 
 - [x] yolo finetuning training
 
 - [x] mmpose sota model keypoint model training
 
-- [ ] mmpose sota model finetuning
+- [x] mmpose sota model finetuning (discarded, because of too large model size for local computing)
 
-- [ ] prepare keynote/ppt presentation
+- [x] prepare keynote/ppt presentation
 
 ## Out created dataset
 
