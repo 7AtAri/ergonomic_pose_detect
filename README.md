@@ -39,7 +39,7 @@ Since desk jobs require long hours of sitting on each workday, ergonomic sitting
 
 - [x] prepare keynote/ppt presentation
 
-## Out own Dataset
+## Out Own Dataset
 
 You can find the dataset we created for posture estimation on [BHT cloud](https://cloud.bht-berlin.de/index.php/s/3HTdw2MXqFR5SJy).
 The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf)
