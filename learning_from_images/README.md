@@ -12,8 +12,12 @@ Since desk jobs require long hours of sitting on each workday, ergonomic sitting
 
 ## 3. Dataset 
 
+### 3.1 Dataset Curation
 For this project we set up our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) with 118 images, that were manually annotated with regards of ergonomic posture. The postures are labeled with according to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf). We used all deskwork related scorings from the rulesheet. 
 
+### 3.2 Splitting the Dataset
+
+To be able to do a final evaluation, as well as a hyperparameter optimization, we needed to do a train, validation and test set split. Since we used a 5-fold cross validation, first only split into the training and testing set. Therefore we used an 80% to 20% split, with 80% being used for training and 20% used for testing the model. The HPO was then done with only the 80% of training data, further split into training and validation set.
 
 ## 4. Code
 
@@ -21,7 +25,7 @@ Disclaimer: All the training had to be done on a local machine, because the univ
 
 ### 4.1 Keypoint Visualization 
 
-We started the project by gaining a first glimpse into the functionalities and possibilities of pose estimation. Therefore we created a [notebook to visualize the keypoints](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset with Ultralytics' YOLOv8-Pose.
+For the start of the project we needed to get a first glimpse into the functionalities and possibilities of pose estimation. Therefore we created a [notebook to visualize the keypoints](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/visualize_keypoints_example.ipynb) on our own dataset with Ultralytics' YOLOv8-Pose.
 
 RTMpose-wholebody vs YOLOv8-Pose:
 
@@ -41,12 +45,20 @@ You can find our model inspection notebook [here](https://github.com/7AtAri/ergo
 To find the best hyperparameters, we used the optuna framework. Finally, we only used a grid search algorithm, but it is easy to just switch the search algorithm, to take advantage of all the possibilities that optuna offers. Take a look at our HPO setup in our notebooks for [YOLO HPO](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/yolo_hpo.ipynb) and for [MMPose](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/mmpose_hpo.ipynb) if you like.
 After an initial HPO of our models, we realized that setting a seed heavily influenced our results. Due to computational restraints we then didn't rerun our HPO including the seed, which would be the better approach, but resided to now just do another HPO on the seed for all the models while keeping the initial other best parameters fixed. You will find this seed optimization notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/report/learning_from_images/src/hpo_model_seeds.ipynb).
 
-### 4.4 Model Training and Evaluations
+### 4.4 Model Training 
 
-(YOLOv8 Pose and MMPose - rtm wholebody)
+(YOLOv8 Pose and RTMpose-wholebody)
 
 After putting up notebooks for every single pipeline, we set up one singular clean notebook with our main training and evluation setup for an [all model comparison](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/all_model_comparison.ipynb). Please use this notebook as the main reference for our project.
 
+#### 4.4.1 Feature Extraction
+As a first step we used the 7 scores 
+
+#### 4.4.1 Fine-Tuning
+...
+
+### 4.5 Evaluation
+...
 
 ## 5. Final results
 ...
