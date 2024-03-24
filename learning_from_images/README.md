@@ -74,14 +74,17 @@ As a first step we used the 7 scores of the RULA worksheet directly to get a sco
 This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model.
 For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. We use MSE (Mean Squared Error) as loss function.
 
-- 2) Classification Models:
+This is calculated for both, the YOLOv8-pose model and the RTMpose-wholebody, and additionally 
+we estimate seven keypoint angles from the 17 Keypoints of the YOLOv8-pose model. Keypoint Angles description... ! todo Vipin
+
+
+- 2. Classification Models:
 
 For a second approach we grouped the 7 possible scores of the RULA worksheet to three classes.
 The first class, we call the "green" class, it describes a good posture, that can be kept for a long(er) period of time. This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time. Finally, the "red" class signals that the posture should be changed soon, even better immediately. It groups the RULA scores 6 and 7. For these three classes, we build a fully conneceted classification model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. We use Cross Entropy loss for the training.
 
-- 3) Classification + Keypoint Angle Models:
- 
-As a third feature extraction approach, we estimate seven keypoint angles. Keypoint Angles description... ! todo Vipin
+This is calculated for both, the YOLOv8-pose model and the RTMpose-wholebody, and additionally 
+we estimate seven keypoint angles from the 17 Keypoints of the YOLOv8-pose model. Keypoint Angles description... ! todo Vipin
 
 #### 4.4.2 Fine-Tuning 
 
