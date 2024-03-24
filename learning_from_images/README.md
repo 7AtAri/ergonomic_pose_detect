@@ -24,21 +24,10 @@ To gain a first glimpse into the functionalities and possibilities of pose estim
 
 RTMpose-wholebody vs YOLOv8pose:
 
-<img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
-<img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
-
 <p align="center">
   <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
   <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
 </p>
-
-<table>
-  <tr>
-    <td><img src="https://github.com/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/></td>
-    <td><img src="https://github.com/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/></td>
-  </tr>
-</table>
-
 
 ### 4.2 Model Inspection and Expermiments
 
