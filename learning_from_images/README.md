@@ -80,6 +80,8 @@ For a second approach we grouped the 7 possible scores of the RULA worksheet to 
 The first class, we call the "green" class, it describes a good posture, that can be kept for a long(er) period of time. This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time. Finally, the "red" class signals that the posture should be changed soon, even better immediately. It groups the RULA scores 6 and 7. For these three classes, we build a fully conneceted classification model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers.
 
 - 3) Classification + Keypoint Angle Models:
+ 
+As a third feature extraction approach, we estimate seven keypoint angles. Keypoint Angles description... ! todo Vipin
 
 #### 4.4.1 Fine-Tuning
 ...
