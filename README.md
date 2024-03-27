@@ -1,12 +1,9 @@
 # ergonomic posture detection
 
-- for learning from images
+- [learning from images project](https://github.com/7AtAri/ergonomic_pose_detect/tree/main/learning_from_images)
 
 - [sources](learning_from_images/sources.md)
 
-## Idea
-
-...
 
 ## todo checklist / Steps 
 
