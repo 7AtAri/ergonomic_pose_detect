@@ -5,6 +5,7 @@
 
 # Pytorch_models
 *.pt
+*.pth
 
 # Vscode
 .vscode/
