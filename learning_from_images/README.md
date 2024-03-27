@@ -10,6 +10,7 @@ Since desk jobs require long hours of sitting on each workday, ergonomic sitting
 ## 2. Presentation Slides
 
 We presented our project and its results with these [slides](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/pr%C3%A4si/ergo_posture_pr%C3%A4si.pdf).
+In these we explain the problem, our approaches and the challenges we faced.
 
 ## 3. Dataset 
 
@@ -25,7 +26,7 @@ To be able to do a final evaluation, as well as a hyperparameter optimization, w
 
 ## 4. Code
 
-Disclaimer: All the training had to be done on a local machine, because the university cluster is not accessible at the moment due to a cyber attack. This puts heavy computational restraints on our work, especially with regard to model fine-tuning.
+**Disclaimer:** All the training had to be done on a local machine, because the university cluster is not accessible at the moment due to a cyber attack. This puts heavy computational restraints on our work, especially with regard to model fine-tuning.
 
 ### 4.1 Keypoint Visualization 
 
@@ -69,23 +70,32 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 
 #### 4.4.1 Feature Extraction
 
-- 1) Scoring Models:
+Our first appraoch was to use the pretrained models just for inference and to extract the keypoints from the images.
+As a first step we defined two tasks for the feature extraction approach.
+- **Scoring Task:**\
+We use the 7 scores of the RULA worksheet directly to get a scoring/regression model.
+This is possible because the RULA score is an ordinary discrete scale that can be interpreted as a continous scale.
+The hypothesis was, that this would be a fine grained insight into the egronomics of a posture.
+- **Classification Task:**\
+We group the 7 scores of the RULA worksheet into three classes. This is done to get a more general insight into the ergonomics of a posture.
+The hypothesis was, that this would be a more robust approach, since the RULA scores are quite subjective and the classes are more general.
+The first class, we call it the "green" class, it describes a good posture, that can be kept for a long(er) period of time.
+This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time.
+Finally, the "red" class signals that the posture should be changed soon, even better immediately.
+It groups the RULA scores 6 and 7.
 
-As a first step we used the 7 scores of the RULA worksheet directly to get a scoring/regression model. 
-This is possible because the RULA scores is an ordinary discrete scale that can be interpreted as a continous scale. The hypothesis was, that this would be a fine grained insight into the egronomics of a posture. We tried this approach for the YOLOv8-pose model as well as for the RTMpose-wholebody model.
-For these seven scores, we build a fully conneceted regression model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. We use MSE (Mean Squared Error) as loss function.
+With the tasks defined, we agreed on Neural Network architectures for the feature extraction.
+For both tasks our architecture consists of three hidden layers.
+The number of nodes in the first two hidden layers are configured as hyperparameters *h1* and *h2* that were optimized with [optuna](https://optuna.org).
+The number of nodes in the third hidden layer are the half of the nodes in the second hidden layer.
+After the first two layers we add a dropout layer with a dropout rate of 50%.
+This is done to prevent overfitting.
+The activation function for all three hidden layers is ReLU.
+Finally we have one output layer that linearly transforms the output of the last hidden layer into the desired output space.
+For the scoring task, we use a single output node, since we want to predict a single score.
+For the classification task, we use three output nodes, since we want to predict three classes.
 
-This is calculated for both, the YOLOv8-pose model and the RTMpose-wholebody, and additionally 
-we estimate seven keypoint angles from the 17 Keypoints of the YOLOv8-pose model. Keypoint Angles description... ! todo Vipin
-
-
-- 2. Classification Models:
-
-For a second approach we grouped the 7 possible scores of the RULA worksheet to three classes.
-The first class, we call the "green" class, it describes a good posture, that can be kept for a long(er) period of time. This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time. Finally, the "red" class signals that the posture should be changed soon, even better immediately. It groups the RULA scores 6 and 7. For these three classes, we build a fully conneceted classification model, with three hidden layers and dropout layers with 50% dropout behind the first two hidden layers and ReLU for the activation functions for all three hidden layers. We use Cross Entropy loss for the training.
-
-This is calculated for both, the YOLOv8-pose model and the RTMpose-wholebody, and additionally 
-we estimate seven keypoint angles from the 17 Keypoints of the YOLOv8-pose model. Keypoint Angles description... ! todo Vipin
+... TODO Vipin: Continue with the three model appraoches ...
 
 #### 4.4.2 Fine-Tuning 
 
@@ -100,8 +110,7 @@ Since our 3 classes are balanced we used accuracy as a final metric. These are t
  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="600px"/>
 
 #### 4.5.2 Scoring Models
-
-...
+TODO Vipin
 
 ## 5. Final results
 ...
