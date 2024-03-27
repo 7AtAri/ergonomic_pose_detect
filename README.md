@@ -1,12 +1,13 @@
 # ergonomic posture detection
 
-- for learning from images
+## Learning from Images Project
 
-- [sources](learning_from_images/sources.md)
+- LFI [project documentation](https://github.com/7AtAri/ergonomic_pose_detect/tree/main/learning_from_images)
+  
+- LFI project [code](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/all_model_comparison.ipynb)
 
-## Idea
+- LFI [collected links / sources](learning_from_images/sources.md)
 
-...
 
 ## todo checklist / Steps 
 
