@@ -8,6 +8,8 @@
 
 - LFI [collected links / sources](learning_from_images/sources.md)
 
+- LFI [presentation slides](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/pr%C3%A4si/ergo_posture_pr%C3%A4si.pdf)
+
 
 ## todo checklist / Steps 
 
