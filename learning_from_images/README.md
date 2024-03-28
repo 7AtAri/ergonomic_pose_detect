@@ -117,10 +117,7 @@ The best hyperparameter for our Scoring / Classification models were:
 For the next training approach we calculated specific angles that are important for ergonomic posture (according to RULA).
 We calculated in total seven angles that should be used as input data together with the keypoints.
 
-<p align="center">
-<strong>Visualizations of our calculated angles</strong>
-</p>
-<p align="center">
+<strong>Visualizations of our calculated angles:</strong>
 <table>
 <tr>
   <td align="center">
@@ -150,7 +147,6 @@ We calculated in total seven angles that should be used as input data together w
   
   </td>
 </table>
-</p>
 
 Of these angles there are two angles for the upper arm, the lower arm and the trunk and one angle for the neck.
 These angles do not directly correspond to the way how RULA measures the angles for the posture evaluation, but they relate to the same body parts/joints as RULA does.
