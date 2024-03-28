@@ -117,7 +117,7 @@ The best hyperparameter for our Scoring / Classification models were:
 For the next training approach we calculated specific angles that are important for ergonomic posture (according to RULA).
 We calculated the angles between the following keypoints:
 
-TODO: Add angle images to repo and paste here
+TODO: Add angle images to repo and paste here. Also add a bit more on how to calculate the angles
 
 After calculating the angles we concatenated them with the keypoints as input data.
 We did not perform a separate Hyperparameter Optimization for this model, but used the best hyperparameters from the YOLOv8-Pose model.
@@ -136,6 +136,9 @@ The best hyperparameter for our Scoring / Classification models were:
   ```{'lr': 0.001, 'h1': 1024, 'h2': 512, 'batch_size': 16, 'num_epochs': 100, 'seed': 23}```
 - KeypointScorer:\
   ```{'lr': 5e-05, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 200, 'seed': 1986}```
+
+For this model we did not calculate angles, since the structure was of the keypoints was different and more difficult than YOLO's.
+We assumed the models might also be fine without the angles.
 
 #### 4.4.2 Fine-Tuning 
 
