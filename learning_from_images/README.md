@@ -115,11 +115,53 @@ The best hyperparameter for our Scoring / Classification models were:
 
 ##### 2) YOLOv8-Pose + Self calculated angles
 For the next training approach we calculated specific angles that are important for ergonomic posture (according to RULA).
-We calculated the angles between the following keypoints:
+We calculated in total seven angles that should be used as input data together with the keypoints.
 
-TODO: Add angle images to repo and paste here. Also add a bit more on how to calculate the angles
+<p align="center">
+<strong>Visualizations of our calculated angles</strong>
+<table>
+<tr>
+  <td align="center">
 
-After calculating the angles we concatenated them with the keypoints as input data.
+  Neck Angle<br>
+  <img src="misc_imgs/neck_angle.png" alt="Neck angle" width="250px"/>
+
+  </td>
+  <td align="center">
+
+  Upper Arm Angle<br>
+  <img src="misc_imgs/upperarm_angle.png" alt="Upper arm angle" width="250px"/>
+
+  </td>
+</tr>
+<tr>
+  <td align="center">
+
+  Trunk Angle<br>
+  <img src="misc_imgs/trunk_angle.png" alt="Lower arm angle" width="250px"/>
+
+  </td>
+  <td align="center">
+  
+  Lower Arm Angle<br>
+  <img src="misc_imgs/lowerarm_angle.png" alt="Lower arm angle" width="250px"/>
+  
+  </td>
+</table>
+</p>
+
+Of these angles there are two angles for the upper arm, the lower arm and the trunk and one angle for the neck.
+These angles do not directly correspond to the way how RULA measures the angles for the posture evaluation, but they relate to the same body parts/joints as RULA does.
+The angles are calculated as follows:
+
+- **Neck Angle:** For this angle we calculate the middle point between the hips and the shoulders to get the central axis of the body.
+We then calculate the inner angle between the central axis and the line from the center of the shoulders to the nose.
+- **Upper Arm Angle:** For this angle we calculate the inner angle between the line from the hip to the shoulder and the line from the shoulder to the elbow.
+- **Lower Arm Angle:** For this angle we calculate the inner angle between the line from the shoulder to the elbow and the line from the elbow to the wrist.
+- **Trunk Angle:** For this angle we calculate the inner angle between the line between the two hips and the line from the left/right hip to the left/right shoulder.
+This angle is a bit more complicated to understand, but it is a good approximation for the trunk ergonomics.
+
+After calculating the angles we concatenated them with the keypoints as our input data.
 We did not perform a separate Hyperparameter Optimization for this model, but used the best hyperparameters from the YOLOv8-Pose model.
 
 ##### 3) RTMpose-wholebody
