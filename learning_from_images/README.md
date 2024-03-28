@@ -119,6 +119,8 @@ We calculated in total seven angles that should be used as input data together w
 
 <p align="center">
 <strong>Visualizations of our calculated angles</strong>
+</p>
+<p align="center">
 <table>
 <tr>
   <td align="center">
