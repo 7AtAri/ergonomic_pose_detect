@@ -100,7 +100,7 @@ Finally we have one output layer that linearly transforms the output of the last
 For the scoring task, we use a single output node, since we want to predict a single score.
 For the classification task, we use three output nodes, since we want to predict three classes.
 
-##### YOLOv8-Pose
+##### 1) YOLOv8-Pose
 The first model we used for feature extraction was the YOLOv8-Pose model.
 This model outputs 17 keypoints on the whole body:
 <p align="center">
@@ -113,7 +113,7 @@ The best hyperparameter for our Scoring / Classification models were:
 - KeypointScorer:\
 ```{'lr': 0.001, 'h1': 256, 'h2': 256, 'batch_size': 16, 'num_epochs': 200, 'seed' : 13}```
 
-##### YOLOv8-Pose + Self calculated angles
+##### 2) YOLOv8-Pose + Self calculated angles
 For the next training approach we calculated specific angles that are important for ergonomic posture (according to RULA).
 We calculated the angles between the following keypoints:
 
@@ -122,7 +122,7 @@ TODO: Add angle images to repo and paste here
 After calculating the angles we concatenated them with the keypoints as input data.
 We did not perform a separate Hyperparameter Optimization for this model, but used the best hyperparameters from the YOLOv8-Pose model.
 
-##### RTMpose-wholebody
+##### 3) RTMpose-wholebody
 The second model we used to compare against YOLOv8-Pose is the RTMpose-wholebody model.
 This model outputs 133 keypoints on the whole body:
 <p align="center">
