@@ -52,12 +52,16 @@ After an initial HPO of our models, we realized that setting a seed heavily infl
 
 #### Best Hypeparameter:
 - YOLOv8-Pose:
-  - KeypointClassifier: ```{'lr': 0.0001, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 300, 'seed' : 1986}```
-  - KeypointScorer: ```{'lr': 0.001, 'h1': 256, 'h2': 256, 'batch_size': 16, 'num_epochs': 200, 'seed' : 13}```
+  - KeypointClassifier:\
+  ```{'lr': 0.0001, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 300, 'seed' : 1986}```
+  - KeypointScorer:\
+  ```{'lr': 0.001, 'h1': 256, 'h2': 256, 'batch_size': 16, 'num_epochs': 200, 'seed' : 13}```
 
 - RTMpose-Wholebody:
-  - KeypointClassifier: ```{'lr': 0.001, 'h1': 1024, 'h2': 512, 'batch_size': 16, 'num_epochs': 100, 'seed': 23}```
-  - KeypointScorer: ```{'lr': 5e-05, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 200, 'seed': 1986}```
+  - KeypointClassifier:\
+  ```{'lr': 0.001, 'h1': 1024, 'h2': 512, 'batch_size': 16, 'num_epochs': 100, 'seed': 23}```
+  - KeypointScorer:\
+  ```{'lr': 5e-05, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 200, 'seed': 1986}```
 
 For the YOLOv8-pose model fine-tuning approach, we could not do any HPO due to computational restraints.
 We picked a few of the formerly good hyperparameters and took an educated guess on the others.
@@ -96,7 +100,42 @@ Finally we have one output layer that linearly transforms the output of the last
 For the scoring task, we use a single output node, since we want to predict a single score.
 For the classification task, we use three output nodes, since we want to predict three classes.
 
-... TODO Vipin: Continue with the three model appraoches ...
+##### YOLOv8-Pose
+The first model we used for feature extraction was the YOLOv8-Pose model.
+This model outputs 17 keypoints on the whole body:
+<p align="center">
+  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
+</p>
+
+The best hyperparameter for our Scoring / Classification models were:
+- KeypointClassifier:\
+```{'lr': 0.0001, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 300, 'seed' : 1986}```
+- KeypointScorer:\
+```{'lr': 0.001, 'h1': 256, 'h2': 256, 'batch_size': 16, 'num_epochs': 200, 'seed' : 13}```
+
+##### YOLOv8-Pose + Self calculated angles
+For the next training approach we calculated specific angles that are important for ergonomic posture (according to RULA).
+We calculated the angles between the following keypoints:
+
+TODO: Add angle images to repo and paste here
+
+After calculating the angles we concatenated them with the keypoints as input data.
+We did not perform a separate Hyperparameter Optimization for this model, but used the best hyperparameters from the YOLOv8-Pose model.
+
+##### RTMpose-wholebody
+The second model we used to compare against YOLOv8-Pose is the RTMpose-wholebody model.
+This model outputs 133 keypoints on the whole body:
+<p align="center">
+  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
+</p>
+Compared to YOLO it has a lot more keypoints especially in the face and the hand area.
+Our hypothesis was that more keypoints would benefit the model to better capture the structure of the human pose.
+
+The best hyperparameter for our Scoring / Classification models were:
+- KeypointClassifier:\
+  ```{'lr': 0.001, 'h1': 1024, 'h2': 512, 'batch_size': 16, 'num_epochs': 100, 'seed': 23}```
+- KeypointScorer:\
+  ```{'lr': 5e-05, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 200, 'seed': 1986}```
 
 #### 4.4.2 Fine-Tuning 
 
