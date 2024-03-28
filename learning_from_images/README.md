@@ -71,6 +71,7 @@ After putting up notebooks for every single pipeline, we set up one singular cle
 #### 4.4.1 Feature Extraction
 
 Our first appraoch was to use the pretrained models just for inference and to extract the keypoints from the images.
+The extracted keypoints would then be used as input data with our labels.
 As a first step we defined two tasks for the feature extraction approach.
 - **Scoring Task:**\
 We use the 7 scores of the RULA worksheet directly to get a scoring/regression model.
