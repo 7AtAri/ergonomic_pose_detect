@@ -229,7 +229,7 @@ TODO: Reformatting? Vipin/Ari
 
 #### 4.5.1 Classification Models
 
-Since our 3 classes are balanced we used accuracy as a final metric. 
+Since our 3 classes are almost balanced we could use accuracy as the final metric. Just to be safe, we also checked for deviations with the F1-score, which did not occure.
 As one can see, the RTMpose keypoint extraction model has the highest accuracy value of almost 70%. Followed by the YOLOv8-pose model used as a keypoint extractor at around 61% and the fine-tuned YOLOv8-pose model and the YOLOv8-pose keypoint extractor combined with angle information, both around 52% accuracy. This makes all of the models better than just guessing, which would mean a 30% chance / accuracy for a 3-class problem. These are the confusion matrices for our four classification models: 
 
  <img src="src/plots/confusion_matrices.png" width="600px"/>
