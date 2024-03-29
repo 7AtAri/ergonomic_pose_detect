@@ -193,7 +193,28 @@ Since our 3 classes are balanced we used accuracy as a final metric. These are t
  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="600px"/>
 
 #### 4.5.2 Scoring Models
-TODO Vipin
+<img src="misc_imgs/scoring_evaluation.png" alt="Scoring evaluation" width="600px"/>
+
+TODO: Vipin Describe
+
+#### 4.5.3 Training Evaluation using loss curves
+
+##### 1) Classification Models
+  <img src="misc_imgs/train_test_loss_yolo_classifier.png" alt="Yolo Classifier Train Test Loss" width="600px"/>
+
+  <img src="misc_imgs/train_test_loss_yolo_angles_classifier.png" alt="Yolo + Angles Classifier Train Test Loss" width="600px"/>
+
+  <img src="misc_imgs/train_test_loss_rtmpose_classifier.png" alt="RTMpose Classifier Train Test Loss" width="600px"/>
+
+  <img src="misc_imgs/train_loss_finetuned_yolo_classifier.png" alt="Finetuned Yolo Classifier Train Loss" width="600px"/>
+
+
+##### 2) Scoring Models
+  <img src="misc_imgs/train_test_loss_yolo_scorer.png" alt="Yolo Scorer Train Test Loss" width="600px"/>
+
+  <img src="misc_imgs/train_test_loss_yolo_angles_scorer.png" alt="Yolo + Angles Scorer Train Test Loss" width="600px"/>
+
+  <img src="misc_imgs/train_test_loss_rtmpose_scorer.png" alt="RTMpose Scorer Train Test Loss" width="600px"/>
 
 ## 5. Final results
 ...
