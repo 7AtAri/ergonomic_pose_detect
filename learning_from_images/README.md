@@ -41,6 +41,24 @@ All the remaining steps were not considered, since they are either not related t
 
 This is how the seven scores are distributed in our dataset:
 
+| RULA score             | Amount of images in class |
+|:----------------------:|:-------------------------:|
+| 1                      | 16                        |
+| 2                      | 15                        |
+| 3                      | 27                        |
+| 4                      | 13                        |
+| 5                      | 7                         |
+| 6                      | 33                        |
+| 7                      | 7                         |
+
+<img src="misc_imgs/class_distribution_bar_plot.png" width="600px"/>
+
+Since we will later also group the classes into three classes, here is the distribution of the grouped classes:
+
+<img src="misc_imgs/class_distribution_grouped_bar_plot.png" width="430px"/>
+
+TODO: Add more description?
+
 ### 3.3 Splitting the Dataset
 
 To be able to do a final evaluation, as well as a hyperparameter optimization, we needed to do a train, validation and test set split. Since we used a 5-fold cross validation, first only split into the training and testing set. Therefore we used an 80% to 20% split, with 80% being used for training and 20% used for testing the model. The HPO was then done with only the 80% of training data, further split into training and validation set.
