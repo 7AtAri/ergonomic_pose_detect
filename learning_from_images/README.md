@@ -61,7 +61,7 @@ As we can see the resulting 3 classes are almost balanced. We therefore use accu
 
 ### 3.3 Splitting the Dataset
 
-To be able to do a final evaluation, as well as a hyperparameter optimization, we needed to do a train, validation and test set split. Since we used a 5-fold cross validation, first only split into the training and testing set. Therefore we used an 80% to 20% split, with 80% being used for training and 20% used for testing the model. The HPO was then done with only the 80% of training data, further split into training and validation set.
+To be able to do a final evaluation, as well as a hyperparameter optimization, we needed to do a train, validation and test set split. Since we used a 5-fold cross validation, first we only split into the training and testing set. Therefore we used an 80% to 20% split, with 80% being used for training and 20% used for testing the model. The HPO was then done with only the 80% of training data, further split into training and validation set.
 
 ## 4. Code
 
@@ -80,8 +80,8 @@ RTMpose-wholebody vs YOLOv8-Pose:
 
 ### 4.2 Model Inspection and Experiments
 
-To fine-tune YOLOv8-pose, it is necessary to find a good point to cut the YOLOv8-Pose Layers from the original model and to add our classification head. Unfortunately for the YOLOv8 model family this turned out to be quite complicated, since the YOLO models seem to come with an ultralytics wrapper, whose source code is not open. After some experiments, we managed to cut the model after the pose head but before the final keypoints are outputted. It is in general also possible to cut the YOLO model at any other point. But then the YOLO wrapper will be lost, and this results in the model not working properly anymore. So, after model inspection, we decided to take the only possible option to cut the YOLOv8-pose model.
-For the task of fine-tuning the RTMpose-wholebody model, we printed a model summary and realized it has a size of >30 million parameters. Since the fine-tuning of YOLOv8 already took almost all V-RAM, we then knew, that we were not able to fine-tune the model on the local machine. But in general it seems to be a lot easier to cut with the model instact, since it has two final linear layers, that are probably used to calculate the keypoints. The MMPose framework, where we got the RTMpose-wholebody model from, also has implemented backbone, neck and head methods, which make the MMPose models quite accessible for fine-tuning. This is not the case with YOLOv8 pose, which oddly ends with a convolutional layer whose output is then probably processed in a (non-accessible) wrapper method, that comes with the ultralytics package.
+To fine-tune YOLOv8-pose, it is necessary to find a good point to cut the YOLOv8-Pose layers from the original model and to add our classification head. Unfortunately, this turned out to be quite complicated, since the YOLO models seem to come with an ultralytics wrapper, whose source code is not open. After some experiments, we managed to cut the model after the pose head but before the final keypoints are outputted. It is in general also possible to cut the YOLO model at any other point. But then the YOLO wrapper will be lost, and this results in the model not working properly anymore. So, after model inspection, we decided to take the only possible option to cut the YOLOv8-pose model.
+For the task of fine-tuning the RTMpose-wholebody model, we printed a model summary and realized it has a size of >30 million parameters. Since the fine-tuning of YOLOv8 already took almost all V-RAM, we then knew, that we were not able to fine-tune the model on the local machine. But in general, it seems to be a lot easier to cut with the model instact, since it has two final linear layers, that are probably used to calculate the keypoints. The MMPose framework, where we got the RTMpose-wholebody model from, also has implemented backbone, neck and head methods, which make the MMPose models quite accessible for fine-tuning. This is not the case with YOLOv8 pose, which oddly ends with a convolutional layer whose output is then probably processed in a (non-accessible) wrapper method, that comes with the ultralytics package.
 You can find our model inspection notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/pytorch_model_inspection.ipynb) and our YOLO model slicing notebook [here](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/yolo_model_slicing.ipynb). 
 
 ### 4.3 Hyperparameter Optimization
@@ -123,9 +123,9 @@ The hypothesis was, that this would be a fine grained insight into the egronomic
 - **Classification Task:**\
 We group the 7 scores of the RULA worksheet into three classes. This is done to get a more general insight into the ergonomics of a posture.
 The hypothesis was, that this would be a more robust approach, since the RULA scores are quite subjective and the classes are more general.
-The first class, we call it the "green" class, it describes a good posture, that can be kept for a long(er) period of time.
-This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, we encode as "yellow" class and holds postures that should not be kept over longer periods of time.
-Finally, the "red" class signals that the posture should be changed soon, even better immediately.
+The first class, we call it the "green" class, describes a good posture, that can be kept for a long(er) period of time.
+This class consists of RULA's score 1 and score 2. For the second class, we subsume the RULA scores 3 to 5. This class, encoded as "yellow" class, holds postures that should not be kept over longer periods of time.
+Finally, the "red" class signals that the posture should be changed soon, or immediately.
 It groups the RULA scores 6 and 7.
 
 With the tasks defined, we agreed on Neural Network architectures for the feature extraction.
@@ -216,7 +216,7 @@ The best hyperparameter for our Scoring / Classification models were:
 - KeypointScorer:\
   ```{'lr': 5e-05, 'h1': 512, 'h2': 1024, 'batch_size': 4, 'num_epochs': 200, 'seed': 1986}```
 
-For this model we did not calculate angles, since the structure was of the keypoints was different and more difficult than YOLO's.
+For this model we did not calculate angles, since the structure of the keypoints was different and more difficult than YOLO's.
 We assumed the models might also be fine without the angles.
 
 #### 4.4.2 Fine-Tuning 
