@@ -229,22 +229,73 @@ The possible reason will be discussed in the next subsubsection 4.5.3.
 
 #### 4.5.3 Training Evaluation using loss curves
 
-##### 1) Classification Models
+Here we want to have a look at the training and test loss curves for our models.
+For the final training of our models we used the training and validation set as training set and the test set as test set.
+We did this to have all data available for training and to have a good evaluation of the model on unseen data.
+
+During the final training we logged the losses of the training and test set after each epoch for all models except for the finetuned YOLO model.
+For the finetuned YOLO model we only logged the training loss, since we needed to reduce the computational load on the local machine.
+With the help of the train/test loss curves we can see how the models are learning and whether they are overfitting or not.
+
+#### 1) Classification Models
+
+First lets start analyzing the classification models:
+
+<table>
+<tr>
+  <td align="center">
+
   <img src="misc_imgs/train_test_loss_yolo_classifier.png" alt="Yolo Classifier Train Test Loss" width="600px"/>
+
+  </td>
+  <td align="center">
 
   <img src="misc_imgs/train_test_loss_yolo_angles_classifier.png" alt="Yolo + Angles Classifier Train Test Loss" width="600px"/>
 
+  </td>
+</tr>
+<tr>
+  <td align="center">
+
   <img src="misc_imgs/train_test_loss_rtmpose_classifier.png" alt="RTMpose Classifier Train Test Loss" width="600px"/>
 
+  </td>
+  <td align="center">
+  
   <img src="misc_imgs/train_loss_finetuned_yolo_classifier.png" alt="Finetuned Yolo Classifier Train Loss" width="600px"/>
+  
+  </td>
+</table>
 
+TODO: Analysis of the loss curves Classication Models
 
-##### 2) Scoring Models
+#### 2) Scoring Models
+
+Next lets present the loss curves for the scoring models:
+
+<table>
+<tr>
+  <td align="center">
+
   <img src="misc_imgs/train_test_loss_yolo_scorer.png" alt="Yolo Scorer Train Test Loss" width="600px"/>
+
+  </td>
+  <td align="center">
 
   <img src="misc_imgs/train_test_loss_yolo_angles_scorer.png" alt="Yolo + Angles Scorer Train Test Loss" width="600px"/>
 
+  </td>
+</tr>
+<tr>
+  <td align="center">
+
   <img src="misc_imgs/train_test_loss_rtmpose_scorer.png" alt="RTMpose Scorer Train Test Loss" width="600px"/>
+
+  </td>
+  </td>
+</table>
+
+TODO: Analysis of the loss curves Scoring Models
 
 ## 5. Final results
 ...
