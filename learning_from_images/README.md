@@ -5,7 +5,7 @@ Vipin Singh and Ari Wahl
 
 ## 1. Idea
 
-Since desk jobs require long hours of sitting on each workday, ergonomic sitting can help prevent chronic backpain. Especially for remote work, where ergonomic furniture is often missing and people can work on their couch, ergonomic posture detection for the workplace can make a difference. 
+Since desk jobs require long hours of sitting on each workday, ergonomic sitting can help prevent chronic backpain. Especially for remote work, where ergonomic furniture is often missing and people sometimes end up working on their couch, ergonomic posture detection for the workplace can make a difference. 
 
 ## 2. Presentation Slides
 
