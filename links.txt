@@ -1,0 +1,14 @@
+Link to our GitHub:
+https://github.com/7AtAri/ergonomic_pose_detect
+
+Please note that the repository is split for
+Learning from images: https://github.com/7AtAri/ergonomic_pose_detect/tree/main/learning_from_images
+and
+Business Values: https://github.com/7AtAri/ergonomic_pose_detect/tree/main/business%20values
+courses (Winter term 2023/2024)
+
+Link to our Screencast (LFI) (only valid until 05.04.2024, if you need access later please contact us):
+https://we.tl/t-gpZcZYfvI9
+
+Contact mail in case BHT does not work:
+vipinsingh2310@gmail.com
