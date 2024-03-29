@@ -355,7 +355,9 @@ This indicates that the models are not able to learn from the data anymore and t
 Still we assume that the issues with the difference between validation and the test set are probably the same as for the classification models.
 
 ## 5. Conclusion
-TODO: Ari
+
+When we curated our dataset by asssessing poses based on the RULA worksheet, we noticed, that leaning the head backward, rotating it and bending it, really cause the score to go quite high. Since the RTM-pose wholebody model provides much more head related keypoints, it is possible that these are necessary to properly assess the head leaning, rotation and bending. Our results definitely suggest the obvious
+initial hypothesis of more keypoints leading to better results, at least for keypoint extraction based models. Unfortunately we could not do a proper fine-tuning due to the restrictions of the YOLOv8-model and also due to our computational constraints. We believe that we could eventually have achieved a reasonable fine-tuning result with the RTM-pose wholebody model on the university cluster (which unfortunately is not available to us due to a hacking attack). Also, obviously, our dataset is quite small and more training data would almost certainly yield better results. 
 
 ## 6. Sources
 
