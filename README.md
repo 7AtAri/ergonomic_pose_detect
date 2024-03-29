@@ -10,8 +10,6 @@
 
 - LFI [presentation slides](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/pr%C3%A4si/ergo_posture_pr%C3%A4si.pdf)
 
-Since desk jobs require long hours of sitting on each workday, ergonomic sitting can help prevent cronic backpain. Especially for remote work, where ergonomic furniture is often missing and people can work on their couch, ergonomic posture detection for the workplace can make a difference.
-
 ## Sources
 
 - [sources](learning_from_images/sources.md)
