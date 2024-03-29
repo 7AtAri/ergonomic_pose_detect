@@ -19,7 +19,7 @@ TODO: Mention class balance / maybe plot bar chart for that?
 ### 3.1 Dataset Curation
 For this project we set up our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) with 118 images, that were manually annotated with regards of ergonomic posture. The postures are labeled with according to the RULA worksheet. We used all deskwork related scorings from the rulesheet. 
 
- <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/report/learning_from_images/präsi/RULA_2.png" width="600px"/>
+ <img src="präsi/RULA_2.png" width="600px"/>
 
 
 ### 3.2 Splitting the Dataset
@@ -37,8 +37,8 @@ For the start of the project we needed to get a first glimpse into the functiona
 RTMpose-wholebody vs YOLOv8-Pose:
 
 <p align="center">
-  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
-  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
+  <img src="src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
+  <img src="src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
 </p>
 
 ### 4.2 Model Inspection and Experiments
@@ -106,7 +106,7 @@ For the classification task, we use three output nodes, since we want to predict
 The first model we used for feature extraction was the YOLOv8-Pose model.
 This model outputs 17 keypoints on the whole body:
 <p align="center">
-  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
+  <img src="src/output_images_mock_up/vipin_red2_kps.jpg" width="300px"/>
 </p>
 
 The best hyperparameter for our Scoring / Classification models were:
@@ -168,7 +168,7 @@ We did not perform a separate Hyperparameter Optimization for this approach, but
 The second model we used to compare against YOLOv8-Pose is the RTMpose-wholebody model.
 This model outputs 133 keypoints on the whole body:
 <p align="center">
-  <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
+  <img src="src/output_images_mock_up/rtmw_kp_vipin.png" width="300px"/>
 </p>
 Compared to YOLO it has a lot more keypoints especially in the face and the hand area.
 Our hypothesis was that more keypoints would benefit the model to better capture the structure of the human pose.
@@ -192,7 +192,7 @@ Like we explained before, the fine-tuning approach on the local machine only wor
 
 Since our 3 classes are balanced we used accuracy as a final metric. These are the confusion matrices for our four classification models: 
 
- <img src="https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/src/plots/confusion_matrices.png" width="600px"/>
+ <img src="src/plots/confusion_matrices.png" width="600px"/>
 
 #### 4.5.2 Scoring Models
 <img src="misc_imgs/scoring_evaluation.png" alt="Scoring evaluation" width="600px"/>
