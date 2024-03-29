@@ -160,7 +160,7 @@ We then calculate the inner angle between the central axis and the line from the
 This angle is a bit more complicated to understand, but it is a good approximation for the trunk ergonomics.
 
 After calculating the angles we concatenated them with the keypoints as our input data.
-We did not perform a separate Hyperparameter Optimization for this model, but used the best hyperparameters from the YOLOv8-Pose model.
+We did not perform a separate Hyperparameter Optimization for this approach, but used the best hyperparameters from the YOLOv8-Pose model.
 
 ##### 3) RTMpose-wholebody
 The second model we used to compare against YOLOv8-Pose is the RTMpose-wholebody model.
