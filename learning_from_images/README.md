@@ -186,7 +186,9 @@ We assumed the models might also be fine without the angles.
 
 #### 4.4.2 Fine-Tuning 
 
-Like we explained before, the fine-tuning approach on the local machine only worked for the YOLOv8-pose model. To make it work, we needed to reduce the size of input images to 256 x 352 pixels as well as the number of episodes to 50 and we also needed to discard the HPO. As hyperparameters we used a learning rate of $1e^{-4}$, a first hidden layer with 2048 nodes, a second one with 1024 nodes and a third one with 512 nodes and a seed of 13. 
+Like we explained before, the fine-tuning approach on the local machine only worked for the YOLOv8-pose model. To make it work, we needed to reduce the size of input images to 256 x 352 pixels as well as the number of episodes to 50 and we also needed to discard the HPO. As hyperparameters we used a learning rate of $1e^{-4}$, a first hidden layer with 2048 nodes, a second one with 1024 nodes and a third one with 512 nodes and a seed of 13.
+
+TODO: Reformatting? Vipin/Ari
 
 ### 4.5 Final Results
 
@@ -237,6 +239,9 @@ During the final training we logged the losses of the training and test set afte
 For the finetuned YOLO model we only logged the training loss, since we needed to reduce the computational load on the local machine.
 With the help of the train/test loss curves we can see how the models are learning and whether they are overfitting or not.
 
+As a disclaimer we should mention, that the following is only for evaluation purposes and not for model selection.
+That means we do not use the best model according to the following loss curves, but the best model according to the validation set (which is not shown here, but was already used for the hyperparameter optimization, see above).
+
 #### 1) Classification Models
 
 First lets start analyzing the classification models:
@@ -267,7 +272,19 @@ First lets start analyzing the classification models:
   </td>
 </table>
 
-TODO: Analysis of the loss curves Classication Models
+All of our train/test loss curves look similar to each other (at least for those where we have both train and test loss curves).
+It becomes clear that the models are overfitting to the train set and underfitting the test set with increasing epochs.
+
+After observing such a discrepancy between train and test loss, we assumed that our validation and test set are not comparable to each other and did not represented our data distribution well.
+This was indeed the case as we found out that our test set had a lot more yellow and red classes than the validation set had.
+Therefore our hyperparameters were not optimal for benchmarking on the test set and the models were not able to generalize well on the test set.
+
+As a solution to this issue we would need to sample the test set in a way that it would better represent the data distribution of the validation set.
+This could be done by using stratified sampling.
+Also a better but more time-expensive solution would be to capture more data to have a better representation of the data distribution.
+
+For the finetuned YOLO model we can't see the test loss, hence we can't say anything about the generalization of the model.
+But we observe that the model starts at an incredibly high loss and then decreases very fast, but stagnates after a few epochs.
 
 #### 2) Scoring Models
 
@@ -295,10 +312,12 @@ Next lets present the loss curves for the scoring models:
   </td>
 </table>
 
-TODO: Analysis of the loss curves Scoring Models
+We can't observe the same pattern as for the classification models, but we see that similar to the finetuned YOLO model, the models start stagnating after a few epochs.
+This indicates that the models are not able to learn from the data anymore and that the models are not able to generalize well on the test set.
+Still we assume that the issues with the difference between validation and the test set are probably the same as for the classification models.
 
 ## 5. Conclusion
-...
+TODO: Ari
 
 ## 6. Sources
 
