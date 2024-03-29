@@ -21,6 +21,7 @@ They consented to the use of the photos for the training of our models.
 Since they did not consent for public use, we will not show the photos here.
 If you want to get access to the dataset, please write us a message from your google account and we will give you access to the dataset under this link:
 https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq
+
 In total we captured and labeled 118 images, which we will use for this project.
 
 The photographed people were asked to sit in different postures, which were labeled according to the RULA worksheet.
