@@ -14,17 +14,33 @@ In these we explain the problem, our approaches and the challenges we faced.
 
 ## 3. Dataset 
 
-TODO: Mention class balance / maybe plot bar chart for that?
-
 ### 3.1 Dataset Curation
-For this project we set up our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) with 118 images, that were manually annotated with regards of ergonomic posture. The postures are labeled with according to the RULA worksheet. We used all deskwork related scorings from the rulesheet.
 
-TODO: I think we should mention more about how we evaluate the worksheet, I can do that - Vipin
+For this project we created our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) in which we captured photos of our students, families and us in office working conditions.
+They consented to the use of the photos for the training of our models.
+Since they did not consent for public use, we will not show the photos here.
+If you want to get access to the dataset, please write us a message from your google account and we will give you access to the dataset under this link:
+https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq
+In total we captured and labeled 118 images, which we will use for this project.
+
+The photographed people were asked to sit in different postures, which were labeled according to the RULA worksheet.
+We used the main deskwork related scorings from the assessment sheet, which are:
+- Step 1: Upper Arm Position
+- Step 2: Lower Arm Position
+- Step 3: Wrist Position
+- Step 9: Neck Position
+- Step 10: Trunk Position
+- Step 11: Leg Support
+
+All the remaining steps were not considered, since they are either not related to office working conditions or not possible to capture just from the photos.
 
  <img src="präsi/RULA_2.png" width="600px"/>
 
+### 3.2 Data Balancing
 
-### 3.2 Splitting the Dataset
+This is how the seven scores are distributed in our dataset:
+
+### 3.3 Splitting the Dataset
 
 To be able to do a final evaluation, as well as a hyperparameter optimization, we needed to do a train, validation and test set split. Since we used a 5-fold cross validation, first only split into the training and testing set. Therefore we used an 80% to 20% split, with 80% being used for training and 20% used for testing the model. The HPO was then done with only the 80% of training data, further split into training and validation set.
 
