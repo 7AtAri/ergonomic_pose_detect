@@ -1,4 +1,4 @@
-# ergonomic posture detection
+# Ergonomic Posture Detection
 
 ## Learning from Images Project
 
@@ -10,6 +10,11 @@
 
 - LFI [presentation slides](https://github.com/7AtAri/ergonomic_pose_detect/blob/main/learning_from_images/pr%C3%A4si/ergo_posture_pr%C3%A4si.pdf)
 
+Since desk jobs require long hours of sitting on each workday, ergonomic sitting can help prevent cronic backpain. Especially for remote work, where ergonomic furniture is often missing and people can work on their couch, ergonomic posture detection for the workplace can make a difference.
+
+## Sources
+
+- [sources](learning_from_images/sources.md)
 
 ## todo checklist / Steps 
 
@@ -39,12 +44,12 @@
 
 - [x] prepare keynote/ppt presentation
 
-## Out created dataset
+## Out Own Dataset
 
 You can find the dataset we created for posture estimation on [BHT cloud](https://cloud.bht-berlin.de/index.php/s/3HTdw2MXqFR5SJy).
 The postures are labeled with respect to the [RULA worksheet](https://ergo-plus.com/wp-content/uploads/RULA.pdf)
 
-## Base-Model documentations
+## Base-Model Documentations
 
 - [YOLOv8 documentation](https://docs.ultralytics.com/tasks/pose/#models)
 - [MMPose documentation](https://mmpose.readthedocs.io/en/latest/overview.html)
