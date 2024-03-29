@@ -57,7 +57,7 @@ Since we will later also group the classes into three classes, here is the distr
 
 <img src="misc_imgs/class_distribution_grouped_bar_plot.png" width="430px"/>
 
-TODO: Add more description?
+As we can see the resulting 3 classes are almost balanced. We therefore use accuracy as our main metric but will supervise the results with the F1-score.
 
 ### 3.3 Splitting the Dataset
 
