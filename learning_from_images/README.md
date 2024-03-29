@@ -197,9 +197,35 @@ Since our 3 classes are balanced we used accuracy as a final metric. These are t
  <img src="src/plots/confusion_matrices.png" width="600px"/>
 
 #### 4.5.2 Scoring Models
-<img src="misc_imgs/scoring_evaluation.png" alt="Scoring evaluation" width="600px"/>
 
-TODO: Vipin Describe
+Now lets have a look at the MSE losses on the test set for the different scoring approaches:
+
+| Model Name              | MSE Loss on Test Set for Scorings |
+|:-----------------------:|:---------------------------------:|
+| YOLOv8-Pose             | 3.3271                            |
+| RTMpose-Wholebody       | 3.6745                            |
+| YOLOv8-Pose + Angles    | 5.3195                            |
+
+As we can see YOLOv8-Pose performed best on the test set.
+The RTMpose-Wholebody model performed a bit worse than YOLOv8-Pose, but still better than YOLOv8-Pose + Angles.
+This is a bit surprising, since we thought that the angles would help the model to better capture the structure of the human pose.
+But it seems that the model is not able to learn from the angles, since the keypoints are probably already enough to capture the structure of the human pose.
+
+Still we must say that the MSE loss is quite high for all models.
+For our best scoring model YOLOv8-Pose we have a MSE loss of 3.3271.
+This means that the model is off by 1.824 (=sqrt(3.3271)) on average.
+On a scale from 1 to 7 this is acceptable, but not good.
+If we have a look though at the predictions of the model, we see that the model is not able to predict the scores very well, since the predictions are often times very close to the mean of the scores.
+This is a sign that the model is not able to learn from the data.
+
+YOLOv8-Pose Examples for test predictions:
+
+<p align="center">
+  <img src="misc_imgs/keypointscorer_poor_1.png" alt="Scoring evaluation" width="300px"/>
+  <img src="misc_imgs/keypointscorer_poor_2.png" alt="Scoring evaluation" width="298px"/>
+</p>
+
+The possible reason will be discussed in the next subsubsection 4.5.3.
 
 #### 4.5.3 Training Evaluation using loss curves
 
