@@ -19,7 +19,7 @@ In these we explain the problem, our approaches and the challenges we faced.
 For this project we created our own [dataset](https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq?usp=sharing) in which we captured photos of our students, families and us in office working conditions.
 They consented to the use of the photos for the training of our models.
 Since they did not consent for public use, we will not show the photos here.
-If you want to get access to the dataset, please write us a message from your google account and we will give you access to the dataset under this link:
+If you want to get access to the dataset, please write us a message from your google account and we will give you access to the dataset under this link (same link as when you click on "dataset" above):
 https://drive.google.com/drive/folders/1Y0OnUDHBActc6P7XW9Hmb9VlPYdpXWmq
 
 In total we captured and labeled 118 images, which we will use for this project.
@@ -222,8 +222,6 @@ We assumed the models might also be fine without the angles.
 #### 4.4.2 Fine-Tuning 
 
 Like we explained before, the fine-tuning approach on the local machine only worked for the YOLOv8-pose model. To make it work, we needed to reduce the size of input images to 256 x 352 pixels as well as the number of episodes to 50 and we also needed to discard the HPO. As hyperparameters we used a learning rate of $1e^{-4}$, a first hidden layer with 2048 nodes, a second one with 1024 nodes and a third one with 512 nodes and a seed of 13.
-
-TODO: Reformatting? Vipin/Ari
 
 ### 4.5 Final Results
 
