@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
     criterion = nn.CrossEntropyLoss()
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu") # else ("mps" if torch.backends.mps.is_available())
+    device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu") # else ("mps" if torch.backends.mps.is_available())
     print(f"Using device: {device}")
 
 
